@@ -1,0 +1,175 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F45K50 ]
+[d frameptr 4065 ]
+"7 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"28 D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\02_DISPLAY_7_SEGMENTOS\01_EJEMPLOS_MULTIPLEX\DISPLAY_MULTIPLEX.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"53
+[v _Config_Clock Config_Clock `(v  1 e 1 0 ]
+"58
+[v _Config_Port Config_Port `(v  1 e 1 0 ]
+[s S93 . 1 `uc 1 ANSA0 1 0 :1:0 
+`uc 1 ANSA1 1 0 :1:1 
+`uc 1 ANSA2 1 0 :1:2 
+`uc 1 ANSA3 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 ANSA5 1 0 :1:5 
+]
+"248 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h
+[u S100 . 1 `S93 1 . 1 0 ]
+[v _ANSELAbits ANSELAbits `VES100  1 e 1 @3931 ]
+"362
+[v _ANSELD ANSELD `VEuc  1 e 1 @3934 ]
+[s S110 . 1 `uc 1 ANSE0 1 0 :1:0 
+`uc 1 ANSE1 1 0 :1:1 
+`uc 1 ANSE2 1 0 :1:2 
+]
+"436
+[u S114 . 1 `S110 1 . 1 0 ]
+[v _ANSELEbits ANSELEbits `VES114  1 e 1 @3935 ]
+"2521
+[v _SLRCON SLRCON `VEuc  1 e 1 @3962 ]
+"4106
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+[s S33 . 1 `uc 1 LATE0 1 0 :1:0 
+`uc 1 LATE1 1 0 :1:1 
+`uc 1 LATE2 1 0 :1:2 
+]
+"4235
+[s S37 . 1 `uc 1 LE0 1 0 :1:0 
+`uc 1 LE1 1 0 :1:1 
+`uc 1 LE2 1 0 :1:2 
+]
+[u S41 . 1 `S33 1 . 1 0 `S37 1 . 1 0 ]
+[v _LATEbits LATEbits `VES41  1 e 1 @3981 ]
+[s S122 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+`uc 1 TRISA7 1 0 :1:7 
+]
+"4659
+[s S131 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+[u S140 . 1 `S122 1 . 1 0 `S131 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES140  1 e 1 @3986 ]
+"5249
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+[s S162 . 1 `uc 1 TRISE0 1 0 :1:0 
+`uc 1 TRISE1 1 0 :1:1 
+`uc 1 TRISE2 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 WPUE3 1 0 :1:7 
+]
+"5495
+[s S168 . 1 `uc 1 RE0 1 0 :1:0 
+`uc 1 RE1 1 0 :1:1 
+`uc 1 RE2 1 0 :1:2 
+]
+[u S172 . 1 `S162 1 . 1 0 `S168 1 . 1 0 ]
+[v _TRISEbits TRISEbits `VES172  1 e 1 @3990 ]
+[s S59 . 1 `uc 1 SCS 1 0 :2:0 
+`uc 1 HFIOFS 1 0 :1:2 
+`uc 1 OSTS 1 0 :1:3 
+`uc 1 IRCF 1 0 :3:4 
+`uc 1 IDLEN 1 0 :1:7 
+]
+"12380
+[s S65 . 1 `uc 1 SCS0 1 0 :1:0 
+`uc 1 SCS1 1 0 :1:1 
+`uc 1 FLTS 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 IRCF0 1 0 :1:4 
+`uc 1 IRCF1 1 0 :1:5 
+`uc 1 IRCF2 1 0 :1:6 
+]
+[u S73 . 1 `S59 1 . 1 0 `S65 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES73  1 e 1 @4051 ]
+"14 D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\02_DISPLAY_7_SEGMENTOS\01_EJEMPLOS_MULTIPLEX\DISPLAY_MULTIPLEX.X\main.c
+[v _display_anodo display_anodo `[10]uc  1 e 10 0 ]
+"19
+[v _unidades unidades `uc  1 e 1 0 ]
+"20
+[v _decenas decenas `uc  1 e 1 0 ]
+"21
+[v _cuenta cuenta `uc  1 e 1 0 ]
+"28
+[v _main main `(v  1 e 1 0 ]
+{
+"34
+[v main@i i `uc  1 a 1 9 ]
+"51
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 5 ]
+[v ___awmod@counter counter `uc  1 a 1 4 ]
+"7
+[v ___awmod@dividend dividend `i  1 p 2 0 ]
+[v ___awmod@divisor divisor `i  1 p 2 2 ]
+"34
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 6 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 5 ]
+[v ___awdiv@counter counter `uc  1 a 1 4 ]
+"7
+[v ___awdiv@dividend dividend `i  1 p 2 0 ]
+[v ___awdiv@divisor divisor `i  1 p 2 2 ]
+"41
+} 0
+"58 D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\02_DISPLAY_7_SEGMENTOS\01_EJEMPLOS_MULTIPLEX\DISPLAY_MULTIPLEX.X\main.c
+[v _Config_Port Config_Port `(v  1 e 1 0 ]
+{
+"84
+} 0
+"53
+[v _Config_Clock Config_Clock `(v  1 e 1 0 ]
+{
+"56
+} 0

@@ -1,0 +1,457 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\Diego\AppData\Local\Temp\xcAshos.o
+idloc IDLOC 5 200000 200000 8 1 1
+init CODE 0 0 0 4 1 2
+config CONFIG 4 300000 300000 E 1 1
+$dist/default/production\HOLA_MUNDO.X.production.o
+cinit CODE 0 A76 A76 E 1 2
+idloc IDLOC 5 200000 200000 8 1 1
+text0 CODE 0 884 884 6E 1 2
+text1 CODE 0 9B4 9B4 56 1 2
+text2 CODE 0 A0A A0A 38 1 2
+text3 CODE 0 8F2 8F2 66 1 2
+text4 CODE 0 810 810 74 1 2
+text5 CODE 0 A84 A84 E 1 2
+text6 CODE 0 A42 A42 20 1 2
+text7 CODE 0 958 958 5C 1 2
+text8 CODE 0 A62 A62 14 1 2
+text9 CODE 0 A92 A92 E 1 2
+cstackCOMRAM COMRAM 1 1 1 A 1 1
+smallconst SMALLCONST 0 800 800 10 1 2
+config CONFIG 4 300000 300000 E 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 60-7FF 1
+SFR F53-FFF 1
+BANK0 60-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+CONST 4-7FF 1
+CONST AA0-7FFF 1
+SMALLCONST AA0-7FFF 1
+CODE 4-7FF 1
+CODE AA0-7FFF 1
+BIGRAM B-7FF 1
+BIGSFR F53-FFF 1
+COMRAM B-5F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST AA0-7FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\HOLA_MUNDO.X.production.o
+A92 text9 CODE >42:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\main.c
+A92 text9 CODE >43:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\main.c
+A96 text9 CODE >44:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\main.c
+A9E text9 CODE >45:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\main.c
+A62 text8 CODE >47:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\main.c
+A62 text8 CODE >49:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\main.c
+A66 text8 CODE >52:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\main.c
+A6A text8 CODE >55:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\main.c
+A70 text8 CODE >58:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\main.c
+A74 text8 CODE >60:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\main.c
+958 text7 CODE >3:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+95A text7 CODE >5:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+968 text7 CODE >6:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+96E text7 CODE >7:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+96E text7 CODE >8:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+970 text7 CODE >10:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+97E text7 CODE >11:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+984 text7 CODE >12:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+984 text7 CODE >13:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+986 text7 CODE >15:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+994 text7 CODE >16:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+99A text7 CODE >17:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+99A text7 CODE >18:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+99C text7 CODE >20:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+9AA text7 CODE >21:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+9B0 text7 CODE >22:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+9B0 text7 CODE >23:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+9B2 text7 CODE >24:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+A42 text6 CODE >26:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+A44 text6 CODE >28:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+A46 text6 CODE >29:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+A4C text6 CODE >30:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+A4E text6 CODE >31:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+A5E text6 CODE >32:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+A60 text6 CODE >33:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+A84 text5 CODE >35:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+A84 text5 CODE >37:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+A8A text5 CODE >38:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+A90 text5 CODE >39:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+810 text4 CODE >62:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+810 text4 CODE >64:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+816 text4 CODE >65:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+826 text4 CODE >66:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+82C text4 CODE >67:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+83C text4 CODE >68:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+842 text4 CODE >69:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+852 text4 CODE >70:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+858 text4 CODE >72:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+85E text4 CODE >73:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+864 text4 CODE >74:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+86A text4 CODE >75:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+870 text4 CODE >76:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+876 text4 CODE >77:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+87C text4 CODE >78:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+882 text4 CODE >79:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+8F2 text3 CODE >41:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+8F4 text3 CODE >44:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+904 text3 CODE >46:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+90A text3 CODE >47:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+910 text3 CODE >48:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+916 text3 CODE >49:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+91C text3 CODE >50:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+922 text3 CODE >51:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+926 text3 CODE >52:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+938 text3 CODE >54:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+93E text3 CODE >55:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+944 text3 CODE >56:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+94A text3 CODE >57:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+950 text3 CODE >58:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+956 text3 CODE >60:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+A0A text2 CODE >81:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+A0C text2 CODE >84:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+A12 text2 CODE >85:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+A18 text2 CODE >86:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+A1A text2 CODE >87:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+A22 text2 CODE >88:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+A24 text2 CODE >89:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+A2C text2 CODE >90:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+A2E text2 CODE >91:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+A34 text2 CODE >92:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+A36 text2 CODE >93:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+A3E text2 CODE >94:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+A40 text2 CODE >95:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+9B4 text1 CODE >97:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+9B4 text1 CODE >100:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+9C0 text1 CODE >101:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+A08 text1 CODE >102:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\lcd.c
+884 text0 CODE >18:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\main.c
+884 text0 CODE >19:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\main.c
+888 text0 CODE >20:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\main.c
+88C text0 CODE >21:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\main.c
+890 text0 CODE >22:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\main.c
+894 text0 CODE >25:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\main.c
+89E text0 CODE >26:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\main.c
+8A4 text0 CODE >27:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\main.c
+8AA text0 CODE >28:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\main.c
+8B0 text0 CODE >29:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\main.c
+8B6 text0 CODE >30:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\main.c
+8BC text0 CODE >31:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\main.c
+8C2 text0 CODE >32:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\main.c
+8C8 text0 CODE >33:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\main.c
+8CE text0 CODE >34:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\main.c
+8D4 text0 CODE >36:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\main.c
+8DE text0 CODE >37:D:\CURSOS\GitHub\PIC IEEE SECTION PERU\Codigo\00_GPIO\03_DISPLAY_LCD\00_LCD_EJM1\HOLA_MUNDO.X\main.c
+A76 cinit CODE >1038:C:\Users\Diego\AppData\Local\Temp\xcAshos.s
+A76 cinit CODE >1040:C:\Users\Diego\AppData\Local\Temp\xcAshos.s
+A76 cinit CODE >1043:C:\Users\Diego\AppData\Local\Temp\xcAshos.s
+A76 cinit CODE >1049:C:\Users\Diego\AppData\Local\Temp\xcAshos.s
+A76 cinit CODE >1052:C:\Users\Diego\AppData\Local\Temp\xcAshos.s
+A78 cinit CODE >1053:C:\Users\Diego\AppData\Local\Temp\xcAshos.s
+A7A cinit CODE >1054:C:\Users\Diego\AppData\Local\Temp\xcAshos.s
+A7C cinit CODE >1055:C:\Users\Diego\AppData\Local\Temp\xcAshos.s
+A7E cinit CODE >1056:C:\Users\Diego\AppData\Local\Temp\xcAshos.s
+A80 cinit CODE >1057:C:\Users\Diego\AppData\Local\Temp\xcAshos.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\HOLA_MUNDO.X.production.o
+__Hspace_0 AA0 0 ABS 0 - dist/default/production\HOLA_MUNDO.X.production.o
+__Hspace_1 B 0 ABS 0 - dist/default/production\HOLA_MUNDO.X.production.o
+__Hspace_2 0 0 ABS 0 - dist/default/production\HOLA_MUNDO.X.production.o
+__Hspace_4 60000E 0 ABS 0 - dist/default/production\HOLA_MUNDO.X.production.o
+_Lcd_Init 810 0 CODE 0 text4 dist/default/production\HOLA_MUNDO.X.production.o
+_Lcd_Port 958 0 CODE 0 text7 dist/default/production\HOLA_MUNDO.X.production.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\HOLA_MUNDO.X.production.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Diego\AppData\Local\Temp\xcAshos.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\HOLA_MUNDO.X.production.o
+__end_of_Lcd_Init 884 0 CODE 0 text4 dist/default/production\HOLA_MUNDO.X.production.o
+__end_of_Lcd_Port 9B4 0 CODE 0 text7 dist/default/production\HOLA_MUNDO.X.production.o
+__Lsmallconst 800 0 SMALLCONST 0 smallconst dist/default/production\HOLA_MUNDO.X.production.o
+_LATD F8C 0 ABS 0 - dist/default/production\HOLA_MUNDO.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\Diego\AppData\Local\Temp\xcAshos.o
+_main 884 0 CODE 0 text0 dist/default/production\HOLA_MUNDO.X.production.o
+_Lcd_Write_Char A0A 0 CODE 0 text2 dist/default/production\HOLA_MUNDO.X.production.o
+start 0 0 CODE 0 init C:\Users\Diego\AppData\Local\Temp\xcAshos.o
+Lcd_Port@a 1 0 COMRAM 1 cstackCOMRAM dist/default/production\HOLA_MUNDO.X.production.o
+Lcd_Write_Char@temp 2 0 COMRAM 1 cstackCOMRAM dist/default/production\HOLA_MUNDO.X.production.o
+__Hpowerup 0 0 CODE 0 powerup dist/default/production\HOLA_MUNDO.X.production.o
+__accesstop 60 0 ABS 0 - C:\Users\Diego\AppData\Local\Temp\xcAshos.o
+intlevel0 0 0 CODE 0 text C:\Users\Diego\AppData\Local\Temp\xcAshos.o
+intlevel1 0 0 CODE 0 text C:\Users\Diego\AppData\Local\Temp\xcAshos.o
+intlevel2 0 0 CODE 0 text C:\Users\Diego\AppData\Local\Temp\xcAshos.o
+intlevel3 0 0 CODE 0 text C:\Users\Diego\AppData\Local\Temp\xcAshos.o
+_OSCCONbits FD3 0 ABS 0 - dist/default/production\HOLA_MUNDO.X.production.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\HOLA_MUNDO.X.production.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\HOLA_MUNDO.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\HOLA_MUNDO.X.production.o
+__end_of_Lcd_Write_Char A42 0 CODE 0 text2 dist/default/production\HOLA_MUNDO.X.production.o
+_ANSELD F5E 0 ABS 0 - dist/default/production\HOLA_MUNDO.X.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\Diego\AppData\Local\Temp\xcAshos.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\Diego\AppData\Local\Temp\xcAshos.o
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\HOLA_MUNDO.X.production.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\HOLA_MUNDO.X.production.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\HOLA_MUNDO.X.production.o
+__Hintcodelo 0 0 CODE 0 intcodelo dist/default/production\HOLA_MUNDO.X.production.o
+__end_of_Config_Port A76 0 CODE 0 text8 dist/default/production\HOLA_MUNDO.X.production.o
+Lcd_Set_Cursor@temp 8 0 COMRAM 1 cstackCOMRAM dist/default/production\HOLA_MUNDO.X.production.o
+__Lintcodelo 0 0 CODE 0 intcodelo dist/default/production\HOLA_MUNDO.X.production.o
+start_initialization A76 0 CODE 0 cinit dist/default/production\HOLA_MUNDO.X.production.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\HOLA_MUNDO.X.production.o
+___rparam_used 1 0 ABS 0 - dist/default/production\HOLA_MUNDO.X.production.o
+_Lcd_Write_String 9B4 0 CODE 0 text1 dist/default/production\HOLA_MUNDO.X.production.o
+_SLRCON F7A 0 ABS 0 - dist/default/production\HOLA_MUNDO.X.production.o
+isa$xinst 0 0 ABS 0 - C:\Users\Diego\AppData\Local\Temp\xcAshos.o
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\HOLA_MUNDO.X.production.o
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\HOLA_MUNDO.X.production.o
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\HOLA_MUNDO.X.production.o
+__Hbank3 0 0 ABS 0 bank3 dist/default/production\HOLA_MUNDO.X.production.o
+__Hbank4 0 0 ABS 0 bank4 dist/default/production\HOLA_MUNDO.X.production.o
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\HOLA_MUNDO.X.production.o
+__Hbank6 0 0 ABS 0 bank6 dist/default/production\HOLA_MUNDO.X.production.o
+__Hbank7 0 0 ABS 0 bank7 dist/default/production\HOLA_MUNDO.X.production.o
+__Hcinit 0 0 ABS 0 cinit dist/default/production\HOLA_MUNDO.X.production.o
+__Hconst 0 0 CONST 0 const dist/default/production\HOLA_MUNDO.X.production.o
+__Hidata 0 0 CODE 0 idata dist/default/production\HOLA_MUNDO.X.production.o
+__Hidloc 200008 0 IDLOC 5 idloc dist/default/production\HOLA_MUNDO.X.production.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\HOLA_MUNDO.X.production.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\HOLA_MUNDO.X.production.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\HOLA_MUNDO.X.production.o
+__Hstack 0 0 STACK 2 stack dist/default/production\HOLA_MUNDO.X.production.o
+__Htext0 0 0 ABS 0 text0 dist/default/production\HOLA_MUNDO.X.production.o
+__Htext1 0 0 ABS 0 text1 dist/default/production\HOLA_MUNDO.X.production.o
+__Htext2 0 0 ABS 0 text2 dist/default/production\HOLA_MUNDO.X.production.o
+__Htext3 0 0 ABS 0 text3 dist/default/production\HOLA_MUNDO.X.production.o
+__Htext4 0 0 ABS 0 text4 dist/default/production\HOLA_MUNDO.X.production.o
+__Htext5 0 0 ABS 0 text5 dist/default/production\HOLA_MUNDO.X.production.o
+__Htext6 0 0 ABS 0 text6 dist/default/production\HOLA_MUNDO.X.production.o
+__Htext7 0 0 ABS 0 text7 dist/default/production\HOLA_MUNDO.X.production.o
+__Htext8 0 0 ABS 0 text8 dist/default/production\HOLA_MUNDO.X.production.o
+__Htext9 0 0 ABS 0 text9 dist/default/production\HOLA_MUNDO.X.production.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\HOLA_MUNDO.X.production.o
+__Hbigram 0 0 ABS 0 bigram dist/default/production\HOLA_MUNDO.X.production.o
+__Hbigsfr 0 0 ABS 0 bigsfr dist/default/production\HOLA_MUNDO.X.production.o
+__smallconst 800 0 SMALLCONST 0 smallconst C:\Users\Diego\AppData\Local\Temp\xcAshos.o
+_Config_Clock A92 0 CODE 0 text9 dist/default/production\HOLA_MUNDO.X.production.o
+__Hcomram 0 0 ABS 0 comram dist/default/production\HOLA_MUNDO.X.production.o
+__Hconfig 30000E 0 CONFIG 4 config dist/default/production\HOLA_MUNDO.X.production.o
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\HOLA_MUNDO.X.production.o
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\HOLA_MUNDO.X.production.o
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\HOLA_MUNDO.X.production.o
+__Lbank3 0 0 ABS 0 bank3 dist/default/production\HOLA_MUNDO.X.production.o
+__Lbank4 0 0 ABS 0 bank4 dist/default/production\HOLA_MUNDO.X.production.o
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\HOLA_MUNDO.X.production.o
+__Lbank6 0 0 ABS 0 bank6 dist/default/production\HOLA_MUNDO.X.production.o
+__Lbank7 0 0 ABS 0 bank7 dist/default/production\HOLA_MUNDO.X.production.o
+__Lcinit 0 0 ABS 0 cinit dist/default/production\HOLA_MUNDO.X.production.o
+__Lconst 0 0 CONST 0 const dist/default/production\HOLA_MUNDO.X.production.o
+__Lidata 0 0 CODE 0 idata dist/default/production\HOLA_MUNDO.X.production.o
+__Lidloc 0 0 IDLOC 5 idloc dist/default/production\HOLA_MUNDO.X.production.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\HOLA_MUNDO.X.production.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\HOLA_MUNDO.X.production.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\HOLA_MUNDO.X.production.o
+__Lstack 0 0 STACK 2 stack dist/default/production\HOLA_MUNDO.X.production.o
+__Ltext0 0 0 ABS 0 text0 dist/default/production\HOLA_MUNDO.X.production.o
+__Ltext1 0 0 ABS 0 text1 dist/default/production\HOLA_MUNDO.X.production.o
+__Ltext2 0 0 ABS 0 text2 dist/default/production\HOLA_MUNDO.X.production.o
+__Ltext3 0 0 ABS 0 text3 dist/default/production\HOLA_MUNDO.X.production.o
+__Ltext4 0 0 ABS 0 text4 dist/default/production\HOLA_MUNDO.X.production.o
+__Ltext5 0 0 ABS 0 text5 dist/default/production\HOLA_MUNDO.X.production.o
+__Ltext6 0 0 ABS 0 text6 dist/default/production\HOLA_MUNDO.X.production.o
+__Ltext7 0 0 ABS 0 text7 dist/default/production\HOLA_MUNDO.X.production.o
+__Ltext8 0 0 ABS 0 text8 dist/default/production\HOLA_MUNDO.X.production.o
+__Ltext9 0 0 ABS 0 text9 dist/default/production\HOLA_MUNDO.X.production.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\HOLA_MUNDO.X.production.o
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\HOLA_MUNDO.X.production.o
+__Habs1 0 0 ABS 0 abs1 dist/default/production\HOLA_MUNDO.X.production.o
+__Hdata 0 0 ABS 0 data dist/default/production\HOLA_MUNDO.X.production.o
+__Hheap 0 0 HEAP 7 heap dist/default/production\HOLA_MUNDO.X.production.o
+__Hinit 4 0 CODE 0 init dist/default/production\HOLA_MUNDO.X.production.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\HOLA_MUNDO.X.production.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\HOLA_MUNDO.X.production.o
+__Htemp 0 0 COMRAM 1 temp dist/default/production\HOLA_MUNDO.X.production.o
+__Htext 0 0 ABS 0 text dist/default/production\HOLA_MUNDO.X.production.o
+__Labs1 0 0 ABS 0 abs1 dist/default/production\HOLA_MUNDO.X.production.o
+__Ldata 0 0 ABS 0 data dist/default/production\HOLA_MUNDO.X.production.o
+__Lheap 0 0 HEAP 7 heap dist/default/production\HOLA_MUNDO.X.production.o
+__Linit 0 0 CODE 0 init dist/default/production\HOLA_MUNDO.X.production.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\HOLA_MUNDO.X.production.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\HOLA_MUNDO.X.production.o
+__Ltemp 0 0 COMRAM 1 temp dist/default/production\HOLA_MUNDO.X.production.o
+__Ltext 0 0 ABS 0 text dist/default/production\HOLA_MUNDO.X.production.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\HOLA_MUNDO.X.production.o
+__Hintret 0 0 ABS 0 intret dist/default/production\HOLA_MUNDO.X.production.o
+__Hirdata 0 0 CODE 0 irdata dist/default/production\HOLA_MUNDO.X.production.o
+__S0 AA0 0 ABS 0 - dist/default/production\HOLA_MUNDO.X.production.o
+__S1 B 0 ABS 0 - dist/default/production\HOLA_MUNDO.X.production.o
+__S4 0 0 ABS 0 - dist/default/production\HOLA_MUNDO.X.production.o
+__S5 0 0 ABS 0 - dist/default/production\HOLA_MUNDO.X.production.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\HOLA_MUNDO.X.production.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\HOLA_MUNDO.X.production.o
+__end_of_Lcd_Write_String A0A 0 CODE 0 text1 dist/default/production\HOLA_MUNDO.X.production.o
+__end_of_Lcd_Clear A92 0 CODE 0 text5 dist/default/production\HOLA_MUNDO.X.production.o
+__Lintentry 0 0 ABS 0 intentry dist/default/production\HOLA_MUNDO.X.production.o
+Lcd_Write_String@a 5 0 COMRAM 1 cstackCOMRAM dist/default/production\HOLA_MUNDO.X.production.o
+Lcd_Write_String@i 9 0 COMRAM 1 cstackCOMRAM dist/default/production\HOLA_MUNDO.X.production.o
+__Hramtop 800 0 RAM 0 ramtop dist/default/production\HOLA_MUNDO.X.production.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\HOLA_MUNDO.X.production.o
+__activetblptr 1 0 ABS 0 - dist/default/production\HOLA_MUNDO.X.production.o
+__end_of_Lcd_Cmd A62 0 CODE 0 text6 dist/default/production\HOLA_MUNDO.X.production.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\HOLA_MUNDO.X.production.o
+__end_of_Config_Clock AA0 0 CODE 0 text9 dist/default/production\HOLA_MUNDO.X.production.o
+_Lcd_Clear A84 0 CODE 0 text5 dist/default/production\HOLA_MUNDO.X.production.o
+_Lcd_Set_Cursor 8F2 0 CODE 0 text3 dist/default/production\HOLA_MUNDO.X.production.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\HOLA_MUNDO.X.production.o
+__Lbigram 0 0 ABS 0 bigram dist/default/production\HOLA_MUNDO.X.production.o
+__Lbigsfr 0 0 ABS 0 bigsfr dist/default/production\HOLA_MUNDO.X.production.o
+__Lcomram 0 0 ABS 0 comram dist/default/production\HOLA_MUNDO.X.production.o
+__Lconfig 0 0 CONFIG 4 config dist/default/production\HOLA_MUNDO.X.production.o
+_LATDbits F8C 0 ABS 0 - dist/default/production\HOLA_MUNDO.X.production.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\HOLA_MUNDO.X.production.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\HOLA_MUNDO.X.production.o
+isa$std 1 0 ABS 0 - C:\Users\Diego\AppData\Local\Temp\xcAshos.o
+stackhi 0 0 ABS 0 - C:\Users\Diego\AppData\Local\Temp\xcAshos.o
+stacklo 0 0 ABS 0 - C:\Users\Diego\AppData\Local\Temp\xcAshos.o
+__Lintcode 0 0 CODE 0 intcode dist/default/production\HOLA_MUNDO.X.production.o
+__Lintret 0 0 ABS 0 intret dist/default/production\HOLA_MUNDO.X.production.o
+__Lirdata 0 0 CODE 0 irdata dist/default/production\HOLA_MUNDO.X.production.o
+__Lspace_0 0 0 ABS 0 - dist/default/production\HOLA_MUNDO.X.production.o
+__Lspace_1 0 0 ABS 0 - dist/default/production\HOLA_MUNDO.X.production.o
+__Lspace_2 0 0 ABS 0 - dist/default/production\HOLA_MUNDO.X.production.o
+__Lspace_4 0 0 ABS 0 - dist/default/production\HOLA_MUNDO.X.production.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\HOLA_MUNDO.X.production.o
+end_of_initialization A76 0 CODE 0 cinit dist/default/production\HOLA_MUNDO.X.production.o
+__end_of_Lcd_Set_Cursor 958 0 CODE 0 text3 dist/default/production\HOLA_MUNDO.X.production.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\HOLA_MUNDO.X.production.o
+__Hintentry 0 0 ABS 0 intentry dist/default/production\HOLA_MUNDO.X.production.o
+Lcd_Set_Cursor@a 5 0 COMRAM 1 cstackCOMRAM dist/default/production\HOLA_MUNDO.X.production.o
+Lcd_Set_Cursor@b 4 0 COMRAM 1 cstackCOMRAM dist/default/production\HOLA_MUNDO.X.production.o
+Lcd_Set_Cursor@y 7 0 COMRAM 1 cstackCOMRAM dist/default/production\HOLA_MUNDO.X.production.o
+Lcd_Set_Cursor@z 6 0 COMRAM 1 cstackCOMRAM dist/default/production\HOLA_MUNDO.X.production.o
+__Hreset_vec 0 0 CODE 0 reset_vec dist/default/production\HOLA_MUNDO.X.production.o
+__Lramtop 800 0 RAM 0 ramtop dist/default/production\HOLA_MUNDO.X.production.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\HOLA_MUNDO.X.production.o
+__pcinit A76 0 CODE 0 cinit dist/default/production\HOLA_MUNDO.X.production.o
+__ptext0 884 0 CODE 0 text0 dist/default/production\HOLA_MUNDO.X.production.o
+__ptext1 9B4 0 CODE 0 text1 dist/default/production\HOLA_MUNDO.X.production.o
+__ptext2 A0A 0 CODE 0 text2 dist/default/production\HOLA_MUNDO.X.production.o
+__ptext3 8F2 0 CODE 0 text3 dist/default/production\HOLA_MUNDO.X.production.o
+__ptext4 810 0 CODE 0 text4 dist/default/production\HOLA_MUNDO.X.production.o
+__ptext5 A84 0 CODE 0 text5 dist/default/production\HOLA_MUNDO.X.production.o
+__ptext6 A42 0 CODE 0 text6 dist/default/production\HOLA_MUNDO.X.production.o
+__ptext7 958 0 CODE 0 text7 dist/default/production\HOLA_MUNDO.X.production.o
+__ptext8 A62 0 CODE 0 text8 dist/default/production\HOLA_MUNDO.X.production.o
+__ptext9 A92 0 CODE 0 text9 dist/default/production\HOLA_MUNDO.X.production.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\HOLA_MUNDO.X.production.o
+__ramtop 800 0 RAM 0 ramtop C:\Users\Diego\AppData\Local\Temp\xcAshos.o
+__Lpowerup 0 0 CODE 0 powerup dist/default/production\HOLA_MUNDO.X.production.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\HOLA_MUNDO.X.production.o
+__psmallconst 800 0 SMALLCONST 0 smallconst dist/default/production\HOLA_MUNDO.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\HOLA_MUNDO.X.production.o
+___heap_hi 0 0 ABS 0 - C:\Users\Diego\AppData\Local\Temp\xcAshos.o
+___heap_lo 0 0 ABS 0 - C:\Users\Diego\AppData\Local\Temp\xcAshos.o
+___param_bank 0 0 ABS 0 - dist/default/production\HOLA_MUNDO.X.production.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\HOLA_MUNDO.X.production.o
+__end_of__initialization A76 0 CODE 0 cinit dist/default/production\HOLA_MUNDO.X.production.o
+Lcd_Cmd@a 3 0 COMRAM 1 cstackCOMRAM dist/default/production\HOLA_MUNDO.X.production.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\HOLA_MUNDO.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\HOLA_MUNDO.X.production.o
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\HOLA_MUNDO.X.production.o
+_Config_Port A62 0 CODE 0 text8 dist/default/production\HOLA_MUNDO.X.production.o
+__end_of_main 8F2 0 CODE 0 text0 dist/default/production\HOLA_MUNDO.X.production.o
+_TRISD F95 0 ABS 0 - dist/default/production\HOLA_MUNDO.X.production.o
+__HRAM 0 0 ABS 0 - dist/default/production\HOLA_MUNDO.X.production.o
+__Hbss 0 0 RAM 1 bss dist/default/production\HOLA_MUNDO.X.production.o
+__Hram 0 0 ABS 0 ram dist/default/production\HOLA_MUNDO.X.production.o
+__Hsfr 0 0 ABS 0 sfr dist/default/production\HOLA_MUNDO.X.production.o
+__LRAM 1 0 ABS 0 - dist/default/production\HOLA_MUNDO.X.production.o
+__Lbss 0 0 RAM 1 bss dist/default/production\HOLA_MUNDO.X.production.o
+__Lram 0 0 ABS 0 ram dist/default/production\HOLA_MUNDO.X.production.o
+__Lsfr 0 0 ABS 0 sfr dist/default/production\HOLA_MUNDO.X.production.o
+_Lcd_Cmd A42 0 CODE 0 text6 dist/default/production\HOLA_MUNDO.X.production.o
+__initialization A76 0 CODE 0 cinit dist/default/production\HOLA_MUNDO.X.production.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\HOLA_MUNDO.X.production.o
+__Hsmallconst 810 0 SMALLCONST 0 smallconst dist/default/production\HOLA_MUNDO.X.production.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\HOLA_MUNDO.X.production.o
+Lcd_Write_Char@a 4 0 COMRAM 1 cstackCOMRAM dist/default/production\HOLA_MUNDO.X.production.o
+Lcd_Write_Char@y 3 0 COMRAM 1 cstackCOMRAM dist/default/production\HOLA_MUNDO.X.production.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\HOLA_MUNDO.X.production.o
+__Hintcode 0 0 CODE 0 intcode dist/default/production\HOLA_MUNDO.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text4 0 810 810 290 1
+cstackCOMRAM 1 1 1 A 1
+reset_vec 0 0 0 4 1
+smallconst 0 800 800 10 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
