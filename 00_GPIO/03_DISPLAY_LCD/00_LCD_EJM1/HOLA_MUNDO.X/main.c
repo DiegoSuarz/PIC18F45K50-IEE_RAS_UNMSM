@@ -56,5 +56,6 @@ void Config_Port(void){
    
     //Establecemos como entrada o salida
     TRISD=0b00000000;
-       
+    
+   
 }
