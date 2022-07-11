@@ -71,6 +71,9 @@ void Config_Port(void){
     ANSELAbits.ANSA2=0;
     ANSELAbits.ANSA3=0;
     
+    //transistores de switcheo
+    ANSELEbits.ANSE0=0;
+    ANSELEbits.ANSE1=0;
     
     //Establecemos como entrada o salida
     TRISD=0b00000000;

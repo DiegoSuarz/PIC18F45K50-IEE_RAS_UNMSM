@@ -2,17 +2,18 @@
  * File:   main.c
  * Author: Diego
  *
- * Created on 17 de junio de 2022, 09:13 PM
+ * Created on 10 de julio de 2022, 07:19 PM
  */
 
 #include <xc.h>
 #include <stdint.h>
-#include <stdbool.h>
+#include <stdio.h>
 #include "config_fuses.h"
 #define _XTAL_FREQ 16000000UL
 
+
 uint8_t display_anodo[]={0xC0,0xF9, 0xA4, 0xB0, 0x99, 0x92, 0x82, 0xF8, 0x80, 0x90};
-uint8_t display_catodo[]={0x3F, 0x06, 0x5B, 0x4F, 0x66, 0x6D, 0x7D, 0x07, 0x7F, 0x67};
+
 
 #define Display_Anodo_size  sizeof(display_anodo)/sizeof(display_anodo[0])
 
@@ -27,25 +28,35 @@ void Imprimir_display(uint16_t dato);
 
 void Config_Clock(void);
 void Config_Port(void);
+void Config_TMRS_Interrupt(void);
+void Config_TMR0_Temp(void);
+void Config_TMRS_Interrupt(void);
 
 void main(void) {
+    
     Config_Clock();
     Config_Port();
+    
+    Config_TMR0_Temp();
+    Config_TMRS_Interrupt();
+    
     while(1){
-        if(PORTBbits.RB0==0){
-            while(PORTBbits.RB0==0)Imprimir_display(cuenta);
-            cuenta++;
-            if(cuenta==10000)cuenta=0;
-        }
-        if(PORTBbits.RB1==1){
-            while(PORTBbits.RB1==1)Imprimir_display(cuenta);
-            cuenta--;
-            if(cuenta==65535)cuenta=0;
-        }
+        
+        if(cuenta==520)cuenta=0;
         Imprimir_display(cuenta);
         
     }
     return;
+}
+
+void __interrupt() ISR_TMR0(){
+    if(INTCONbits.TMR0IF){
+        TMR0 = 62411; //carga para 100ms para 16 bits
+        INTCONbits.TMR0IF=0;
+        cuenta++;
+        
+    }
+    
 }
 
 void Config_Clock(void){
@@ -63,22 +74,14 @@ void Config_Port(void){
     //Configuramos pines como analogico o digital
     ANSELD=0b00000000;
    
-    ANSELBbits.ANSB0=0;
-    ANSELBbits.ANSB1=0;
-    
     ANSELAbits.ANSA0=0;
     ANSELAbits.ANSA1=0;
     ANSELAbits.ANSA2=0;
     ANSELAbits.ANSA3=0;
     
-    
     //Establecemos como entrada o salida
     TRISD=0b00000000;
        
-    //botones
-    TRISBbits.TRISB0=1;
-    TRISBbits.TRISB0=1;
-    
     //transistores
     TRISAbits.TRISA0=0; //salida
     TRISAbits.TRISA1=0; //salida
@@ -118,4 +121,34 @@ void Imprimir_display(uint16_t dato)
     __delay_ms(2);
     LATAbits.LATA0=1; //deshabilitar el transistor 
     
+}
+
+
+void Config_TMRS_Interrupt(void){
+    INTCONbits.GIE = 1; //habilitar interrupciones globales
+    INTCONbits.PEIE = 1; //habilitar interrupciones de perifericos
+    
+    //TMR0
+    INTCONbits.TMR0IF = 0; //limpiar bandera de interrupcion del TMR0
+    INTCONbits.TMR0IE = 1; //habilitar interrupcion por desbordamiento del TMR0
+         
+}
+
+void Config_TMR0_Temp(void){
+    //TIMER0
+    T0CONbits.TMR0ON = 0; //detener TMR0
+    T0CONbits.T08BIT = 0; //TMR0 modo 16 bits
+    T0CONbits.T0CS = 0; //modo temporizador, oscilador interno FOSC/4
+    //T0CONbits.T0SE = 0; //imcremento por flanco de subida (solo para modo contador)
+        
+    /*Para 100ms, pree: 128
+     * TMR0 = 65536-(tiempo(s)/((4/FOSC) * prescaler)) 
+     * TMR0 = 65536-(100x10^-3/((4/16x10^6)*128 ))  
+     * TMR0 = 62411
+    */
+    T0CONbits.PSA = 0; //prescaler desactivado
+    T0CONbits.T0PS = 0b110; //prescaler 1:128 (si esta desactivado el prescaler no es necesario configurar)
+    TMR0 = 62411; //carga para 100ms
+    T0CONbits.TMR0ON = 1; //habilitar TMR0
+        
 }

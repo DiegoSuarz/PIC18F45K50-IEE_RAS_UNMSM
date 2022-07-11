@@ -1,0 +1,880 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\TMR0_CONT.X.production.o
+cinit CODE 0 1638 1638 1A 1 2
+idloc IDLOC 5 200000 200000 8 1 1
+text0 CODE 0 11F0 11F0 78 1 2
+text1 CODE 0 1400 1400 52 1 2
+text2 CODE 0 1342 1342 62 1 2
+text3 CODE 0 80E 80E 33A 1 2
+text4 CODE 0 B48 B48 202 1 2
+text5 CODE 0 112A 112A C6 1 2
+text6 CODE 0 1598 1598 36 1 2
+text7 CODE 0 14A4 14A4 44 1 2
+text8 CODE 0 1060 1060 CA 1 2
+text9 CODE 0 1690 1690 2 1 2
+text10 CODE 0 F90 F90 D0 1 2
+text11 CODE 0 EA0 EA0 F0 1 2
+text12 CODE 0 D4A D4A 156 1 2
+text13 CODE 0 1452 1452 52 1 2
+text14 CODE 0 1528 1528 38 1 2
+text15 CODE 0 15CE 15CE 26 1 2
+text16 CODE 0 14E8 14E8 40 1 2
+text17 CODE 0 1560 1560 38 1 2
+text18 CODE 0 12DC 12DC 66 1 2
+text19 CODE 0 1268 1268 74 1 2
+text20 CODE 0 166A 166A E 1 2
+text21 CODE 0 1618 1618 20 1 2
+text22 CODE 0 13A4 13A4 5C 1 2
+text23 CODE 0 1686 1686 A 1 2
+text24 CODE 0 1652 1652 18 1 2
+text25 CODE 0 15F4 15F4 24 1 2
+text26 CODE 0 1678 1678 E 1 2
+cstackCOMRAM COMRAM 1 1 1 5D 1 1
+cstackBANK0 BANK0 1 9A 9A F 1 1
+temp COMRAM 1 5E 5E 1 1 1
+bssBANK0 BANK0 1 60 60 3A 1 1
+intcode CODE 0 8 8 22 1 2
+smallconst SMALLCONST 0 800 800 E 1 2
+config CONFIG 4 300000 300000 E 1 1
+$C:\Users\Diego\AppData\Local\Temp\xcAsaao.o
+idloc IDLOC 5 200000 200000 8 1 1
+init CODE 0 2A 2A 4 1 2
+reset_vec CODE 0 0 0 4 1 2
+config CONFIG 4 300000 300000 E 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM A9-7FF 1
+SFR F53-FFF 1
+BANK0 A9-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+CONST 4-7 1
+CONST 2E-7FF 1
+CONST 1692-7FFF 1
+SMALLCONST 1692-7FFF 1
+CODE 4-7 1
+CODE 2E-7FF 1
+CODE 1692-7FFF 1
+BIGRAM 5F-5F 1
+BIGRAM A9-7FF 1
+BIGSFR F53-FFF 1
+COMRAM 5F-5F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 1692-7FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\TMR0_CONT.X.production.o
+8 intcode CODE >5811:C:\Users\Diego\AppData\Local\Temp\xcAsaao.s
+8 intcode CODE >83:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+A intcode CODE >84:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+18 intcode CODE >85:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+1A intcode CODE >86:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+1E intcode CODE >91:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+26 intcode CODE >94:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+1678 text26 CODE >50:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+1678 text26 CODE >51:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+167C text26 CODE >52:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+1684 text26 CODE >53:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+15F4 text25 CODE >55:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+15F4 text25 CODE >57:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+15F8 text25 CODE >58:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+15FC text25 CODE >59:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+15FE text25 CODE >62:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+1602 text25 CODE >65:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+1608 text25 CODE >66:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+160C text25 CODE >69:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+1610 text25 CODE >70:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+1614 text25 CODE >71:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+1616 text25 CODE >72:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+1652 text24 CODE >118:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+1652 text24 CODE >119:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+1654 text24 CODE >120:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+1656 text24 CODE >121:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+1658 text24 CODE >122:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+165A text24 CODE >123:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+165C text24 CODE >124:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+1660 text24 CODE >126:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+1668 text24 CODE >127:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+1686 text23 CODE >74:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+1686 text23 CODE >75:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+1688 text23 CODE >76:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+168A text23 CODE >78:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+168C text23 CODE >79:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+168E text23 CODE >81:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+13A4 text22 CODE >3:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+13A6 text22 CODE >5:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+13B4 text22 CODE >6:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+13BA text22 CODE >7:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+13BA text22 CODE >8:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+13BC text22 CODE >10:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+13CA text22 CODE >11:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+13D0 text22 CODE >12:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+13D0 text22 CODE >13:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+13D2 text22 CODE >15:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+13E0 text22 CODE >16:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+13E6 text22 CODE >17:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+13E6 text22 CODE >18:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+13E8 text22 CODE >20:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+13F6 text22 CODE >21:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+13FC text22 CODE >22:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+13FC text22 CODE >23:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+13FE text22 CODE >24:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+1618 text21 CODE >26:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+161A text21 CODE >28:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+161C text21 CODE >29:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+1622 text21 CODE >30:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+1624 text21 CODE >31:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+1634 text21 CODE >32:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+1636 text21 CODE >33:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+166A text20 CODE >35:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+166A text20 CODE >37:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+1670 text20 CODE >38:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+1676 text20 CODE >39:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+1268 text19 CODE >62:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+1268 text19 CODE >64:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+126E text19 CODE >65:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+127E text19 CODE >66:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+1284 text19 CODE >67:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+1294 text19 CODE >68:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+129A text19 CODE >69:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+12AA text19 CODE >70:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+12B0 text19 CODE >72:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+12B6 text19 CODE >73:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+12BC text19 CODE >74:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+12C2 text19 CODE >75:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+12C8 text19 CODE >76:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+12CE text19 CODE >77:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+12D4 text19 CODE >78:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+12DA text19 CODE >79:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+12DC text18 CODE >41:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+12DE text18 CODE >44:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+12EE text18 CODE >46:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+12F4 text18 CODE >47:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+12FA text18 CODE >48:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+1300 text18 CODE >49:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+1306 text18 CODE >50:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+130C text18 CODE >51:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+1310 text18 CODE >52:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+1322 text18 CODE >54:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+1328 text18 CODE >55:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+132E text18 CODE >56:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+1334 text18 CODE >57:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+133A text18 CODE >58:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+1340 text18 CODE >60:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+1560 text17 CODE >81:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+1562 text17 CODE >84:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+1568 text17 CODE >85:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+156E text17 CODE >86:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+1570 text17 CODE >87:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+1578 text17 CODE >88:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+157A text17 CODE >89:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+1582 text17 CODE >90:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+1584 text17 CODE >91:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+158A text17 CODE >92:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+158C text17 CODE >93:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+1594 text17 CODE >94:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+1596 text17 CODE >95:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+14E8 text16 CODE >97:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+14E8 text16 CODE >100:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+14F4 text16 CODE >101:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+1526 text16 CODE >102:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\lcd.c
+15CE text15 CODE >15:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\Umul16.c
+15CE text15 CODE >37:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\Umul16.c
+15DA text15 CODE >38:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\Umul16.c
+15E2 text15 CODE >39:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\Umul16.c
+15EA text15 CODE >52:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\Umul16.c
+15F2 text15 CODE >53:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\Umul16.c
+1528 text14 CODE >5:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\isdigit.c
+1528 text14 CODE >7:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\isdigit.c
+155E text14 CODE >8:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\isdigit.c
+1452 text13 CODE >5:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\isspace.c
+1452 text13 CODE >7:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\isspace.c
+14A2 text13 CODE >8:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\isspace.c
+D4A text12 CODE >4:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\atoi.c
+D4A text12 CODE >6:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\atoi.c
+D5A text12 CODE >7:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\atoi.c
+DB8 text12 CODE >9:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\atoi.c
+DC0 text12 CODE >10:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\atoi.c
+DC4 text12 CODE >11:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\atoi.c
+DDC text12 CODE >11:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\atoi.c
+DEA text12 CODE >11:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\atoi.c
+DF2 text12 CODE >11:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\atoi.c
+DFC text12 CODE >14:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\atoi.c
+E32 text12 CODE >13:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\atoi.c
+E68 text12 CODE >15:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\atoi.c
+E9E text12 CODE >16:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\atoi.c
+EA0 text11 CODE >9:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lodiv.c
+EA0 text11 CODE >15:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lodiv.c
+EAC text11 CODE >16:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lodiv.c
+ECA text11 CODE >17:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lodiv.c
+ECE text11 CODE >18:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lodiv.c
+ED2 text11 CODE >19:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lodiv.c
+EE4 text11 CODE >20:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lodiv.c
+EE6 text11 CODE >18:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lodiv.c
+EF4 text11 CODE >23:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lodiv.c
+F06 text11 CODE >24:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lodiv.c
+F34 text11 CODE >25:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lodiv.c
+F54 text11 CODE >26:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lodiv.c
+F56 text11 CODE >28:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lodiv.c
+F68 text11 CODE >29:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lodiv.c
+F6E text11 CODE >30:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lodiv.c
+F6E text11 CODE >31:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lodiv.c
+F8E text11 CODE >32:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lodiv.c
+F90 text10 CODE >9:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lomod.c
+F90 text10 CODE >14:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lomod.c
+FAE text10 CODE >15:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lomod.c
+FB2 text10 CODE >16:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lomod.c
+FB6 text10 CODE >17:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lomod.c
+FC8 text10 CODE >18:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lomod.c
+FCA text10 CODE >16:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lomod.c
+FD8 text10 CODE >21:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lomod.c
+1006 text10 CODE >22:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lomod.c
+1026 text10 CODE >23:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lomod.c
+1038 text10 CODE >24:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lomod.c
+103E text10 CODE >25:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lomod.c
+103E text10 CODE >26:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lomod.c
+105E text10 CODE >27:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lomod.c
+1690 text9 CODE >7:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\putch.c
+1690 text9 CODE >9:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\putch.c
+1060 text8 CODE >8:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\nf_fputc.c
+1060 text8 CODE >12:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\nf_fputc.c
+1084 text8 CODE >13:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\nf_fputc.c
+108A text8 CODE >14:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\nf_fputc.c
+108E text8 CODE >15:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\nf_fputc.c
+10E2 text8 CODE >18:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\nf_fputc.c
+1116 text8 CODE >20:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\nf_fputc.c
+1128 text8 CODE >24:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\nf_fputc.c
+14A4 text7 CODE >8:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\nf_fputs.c
+14A4 text7 CODE >13:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\nf_fputs.c
+14AC text7 CODE >14:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\nf_fputs.c
+14B0 text7 CODE >15:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\nf_fputs.c
+14C2 text7 CODE >16:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\nf_fputs.c
+14C6 text7 CODE >14:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\nf_fputs.c
+14E6 text7 CODE >19:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\nf_fputs.c
+1598 text6 CODE >5:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\strlen.c
+1598 text6 CODE >7:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\strlen.c
+15A0 text6 CODE >8:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\strlen.c
+15A4 text6 CODE >9:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\strlen.c
+15A8 text6 CODE >8:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\strlen.c
+15C0 text6 CODE >11:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\strlen.c
+15CC text6 CODE >12:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\strlen.c
+112A text5 CODE >72:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+112A text5 CODE >77:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+113A text5 CODE >78:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+114E text5 CODE >82:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+1170 text5 CODE >83:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+1178 text5 CODE >84:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+117C text5 CODE >85:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+1190 text5 CODE >86:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+1194 text5 CODE >84:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+11B2 text5 CODE >90:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+11C2 text5 CODE >91:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+11D6 text5 CODE >94:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+11EE text5 CODE >95:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+B48 text4 CODE >615:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+B48 text4 CODE >621:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+B58 text4 CODE >622:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+B5A text4 CODE >624:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+B88 text4 CODE >625:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+B90 text4 CODE >628:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+BB0 text4 CODE >629:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+BB8 text4 CODE >630:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+BBC text4 CODE >631:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+BC0 text4 CODE >632:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+BC6 text4 CODE >633:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+BF2 text4 CODE >633:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+BF6 text4 CODE >633:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+BFA text4 CODE >633:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+BFE text4 CODE >633:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+C02 text4 CODE >633:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+C06 text4 CODE >633:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+C0A text4 CODE >633:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+C0E text4 CODE >633:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+C3C text4 CODE >634:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+C42 text4 CODE >635:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+C48 text4 CODE >636:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+C68 text4 CODE >636:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+C6C text4 CODE >636:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+C70 text4 CODE >636:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+C74 text4 CODE >636:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+C78 text4 CODE >636:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+C7C text4 CODE >636:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+C80 text4 CODE >636:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+C84 text4 CODE >636:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+CAC text4 CODE >631:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+D20 text4 CODE >640:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+D48 text4 CODE >641:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+80E text3 CODE >692:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+80E text3 CODE >702:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+832 text3 CODE >703:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+840 text3 CODE >705:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+852 text3 CODE >706:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+856 text3 CODE >710:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+85E text3 CODE >711:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+862 text3 CODE >714:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+866 text3 CODE >715:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+874 text3 CODE >716:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+878 text3 CODE >718:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+880 text3 CODE >722:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+888 text3 CODE >726:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+890 text3 CODE >730:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+898 text3 CODE >734:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+8A0 text3 CODE >735:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+8A4 text3 CODE >736:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+8C0 text3 CODE >736:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+8CE text3 CODE >736:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+8D6 text3 CODE >736:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+8DE text3 CODE >736:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+8E6 text3 CODE >736:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+8EE text3 CODE >736:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+8F8 text3 CODE >711:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+90A text3 CODE >738:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+91A text3 CODE >739:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+91C text3 CODE >745:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+940 text3 CODE >746:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+94E text3 CODE >747:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+976 text3 CODE >748:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+984 text3 CODE >749:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+986 text3 CODE >750:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+992 text3 CODE >753:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+9AE text3 CODE >754:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+9B2 text3 CODE >755:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+9C0 text3 CODE >754:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+9FE text3 CODE >1204:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+A22 text3 CODE >1206:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+A30 text3 CODE >1207:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+A6C text3 CODE >1209:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+AA4 text3 CODE >1372:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+AC8 text3 CODE >1373:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+AD6 text3 CODE >1374:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+AEA text3 CODE >1375:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+AF6 text3 CODE >1379:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+B04 text3 CODE >1380:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+B10 text3 CODE >1384:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+B34 text3 CODE >1385:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+B46 text3 CODE >1387:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+1342 text2 CODE >1390:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+1342 text2 CODE >1395:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+134A text2 CODE >1396:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+1354 text2 CODE >1397:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+1358 text2 CODE >1398:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+137E text2 CODE >1397:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+139A text2 CODE >1400:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+13A2 text2 CODE >1404:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+1400 text1 CODE >9:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\nf_sprintf.c
+1400 text1 CODE >15:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\nf_sprintf.c
+140A text1 CODE >16:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\nf_sprintf.c
+1412 text1 CODE >17:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\nf_sprintf.c
+141A text1 CODE >18:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\nf_sprintf.c
+1422 text1 CODE >19:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\nf_sprintf.c
+143E text1 CODE >20:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\nf_sprintf.c
+1450 text1 CODE >23:C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\nf_sprintf.c
+11F0 text0 CODE >27:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+11F0 text0 CODE >29:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+11F4 text0 CODE >30:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+11F8 text0 CODE >31:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+11FC text0 CODE >32:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+1200 text0 CODE >33:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+1204 text0 CODE >37:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+1208 text0 CODE >40:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+1210 text0 CODE >41:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+122C text0 CODE >42:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+1236 text0 CODE >43:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+1242 text0 CODE >44:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+1246 text0 CODE >45:D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\01_TMR0_CONTADOR\TMR0_CONT.X\main.c
+1638 cinit CODE >1083:C:\Users\Diego\AppData\Local\Temp\xcAsaao.s
+1638 cinit CODE >1085:C:\Users\Diego\AppData\Local\Temp\xcAsaao.s
+1638 cinit CODE >1088:C:\Users\Diego\AppData\Local\Temp\xcAsaao.s
+1638 cinit CODE >1113:C:\Users\Diego\AppData\Local\Temp\xcAsaao.s
+163C cinit CODE >1114:C:\Users\Diego\AppData\Local\Temp\xcAsaao.s
+163E cinit CODE >1115:C:\Users\Diego\AppData\Local\Temp\xcAsaao.s
+163E cinit CODE >1116:C:\Users\Diego\AppData\Local\Temp\xcAsaao.s
+1640 cinit CODE >1117:C:\Users\Diego\AppData\Local\Temp\xcAsaao.s
+1642 cinit CODE >1118:C:\Users\Diego\AppData\Local\Temp\xcAsaao.s
+1644 cinit CODE >1124:C:\Users\Diego\AppData\Local\Temp\xcAsaao.s
+1644 cinit CODE >1126:C:\Users\Diego\AppData\Local\Temp\xcAsaao.s
+1646 cinit CODE >1127:C:\Users\Diego\AppData\Local\Temp\xcAsaao.s
+1648 cinit CODE >1129:C:\Users\Diego\AppData\Local\Temp\xcAsaao.s
+164A cinit CODE >1130:C:\Users\Diego\AppData\Local\Temp\xcAsaao.s
+164C cinit CODE >1131:C:\Users\Diego\AppData\Local\Temp\xcAsaao.s
+164E cinit CODE >1132:C:\Users\Diego\AppData\Local\Temp\xcAsaao.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\TMR0_CONT.X.production.o
+__Hspace_0 1692 0 ABS 0 - dist/default/production\TMR0_CONT.X.production.o
+__Hspace_1 A9 0 ABS 0 - dist/default/production\TMR0_CONT.X.production.o
+__Hspace_2 0 0 ABS 0 - dist/default/production\TMR0_CONT.X.production.o
+__Hspace_4 60000E 0 ABS 0 - dist/default/production\TMR0_CONT.X.production.o
+_Lcd_Init 1268 0 CODE 0 text19 dist/default/production\TMR0_CONT.X.production.o
+_Lcd_Port 13A4 0 CODE 0 text22 dist/default/production\TMR0_CONT.X.production.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\TMR0_CONT.X.production.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Diego\AppData\Local\Temp\xcAsaao.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\TMR0_CONT.X.production.o
+__end_of_Lcd_Init 12DC 0 CODE 0 text19 dist/default/production\TMR0_CONT.X.production.o
+__end_of_Lcd_Port 1400 0 CODE 0 text22 dist/default/production\TMR0_CONT.X.production.o
+?_pad 11 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+?_vfprintf 50 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+__Lsmallconst 800 0 SMALLCONST 0 smallconst dist/default/production\TMR0_CONT.X.production.o
+_LATB F8A 0 ABS 0 - dist/default/production\TMR0_CONT.X.production.o
+_LATC F8B 0 ABS 0 - dist/default/production\TMR0_CONT.X.production.o
+_LATD F8C 0 ABS 0 - dist/default/production\TMR0_CONT.X.production.o
+_TMR0 FD6 0 ABS 0 - dist/default/production\TMR0_CONT.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\Diego\AppData\Local\Temp\xcAsaao.o
+_atoi D4A 0 CODE 0 text12 dist/default/production\TMR0_CONT.X.production.o
+_dbuf 6A 0 BANK0 1 bssBANK0 dist/default/production\TMR0_CONT.X.production.o
+_main 11F0 0 CODE 0 text0 dist/default/production\TMR0_CONT.X.production.o
+_nout 60 0 BANK0 1 bssBANK0 dist/default/production\TMR0_CONT.X.production.o
+_prec 64 0 BANK0 1 bssBANK0 dist/default/production\TMR0_CONT.X.production.o
+_utoa B48 0 CODE 0 text4 dist/default/production\TMR0_CONT.X.production.o
+btemp 5E 0 COMRAM 1 temp dist/default/production\TMR0_CONT.X.production.o
+_Lcd_Write_Char 1560 0 CODE 0 text17 dist/default/production\TMR0_CONT.X.production.o
+pad@i 18 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+pad@p 15 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+pad@w 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+start 2A 0 CODE 0 init C:\Users\Diego\AppData\Local\Temp\xcAsaao.o
+Lcd_Port@a 1 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+pad@fp 11 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+?___wmul 1 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+Lcd_Write_Char@temp 2 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+_str_contador 8A 0 BANK0 1 bssBANK0 dist/default/production\TMR0_CONT.X.production.o
+__Hpowerup 2A 0 CODE 0 powerup dist/default/production\TMR0_CONT.X.production.o
+__end_of_vfpfcnvrt B48 0 CODE 0 text3 dist/default/production\TMR0_CONT.X.production.o
+_T0CONbits FD5 0 ABS 0 - dist/default/production\TMR0_CONT.X.production.o
+ttemp5 5F 0 COMRAM 1 temp dist/default/production\TMR0_CONT.X.production.o
+ttemp6 62 0 COMRAM 1 temp dist/default/production\TMR0_CONT.X.production.o
+ttemp7 66 0 COMRAM 1 temp dist/default/production\TMR0_CONT.X.production.o
+___lodiv@divisor 9 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+utoa@d 1E 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+utoa@i 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+utoa@n 32 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+utoa@p 2E 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+utoa@w 30 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+__accesstop 60 0 ABS 0 - C:\Users\Diego\AppData\Local\Temp\xcAsaao.o
+intlevel0 0 0 CODE 0 text C:\Users\Diego\AppData\Local\Temp\xcAsaao.o
+intlevel1 0 0 CODE 0 text C:\Users\Diego\AppData\Local\Temp\xcAsaao.o
+intlevel2 0 0 CODE 0 text C:\Users\Diego\AppData\Local\Temp\xcAsaao.o
+intlevel3 0 0 CODE 0 text C:\Users\Diego\AppData\Local\Temp\xcAsaao.o
+_OSCCONbits FD3 0 ABS 0 - dist/default/production\TMR0_CONT.X.production.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\TMR0_CONT.X.production.o
+wtemp8 5F 0 COMRAM 1 temp dist/default/production\TMR0_CONT.X.production.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\TMR0_CONT.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\TMR0_CONT.X.production.o
+_vfpfcnvrt 80E 0 CODE 0 text3 dist/default/production\TMR0_CONT.X.production.o
+__end_of_Lcd_Write_Char 1598 0 CODE 0 text17 dist/default/production\TMR0_CONT.X.production.o
+___wmul@multiplicand 3 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+_ANSELB F5C 0 ABS 0 - dist/default/production\TMR0_CONT.X.production.o
+_ANSELD F5E 0 ABS 0 - dist/default/production\TMR0_CONT.X.production.o
+__end_of_Config_TMR0_Interrupt 1690 0 CODE 0 text23 dist/default/production\TMR0_CONT.X.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\Diego\AppData\Local\Temp\xcAsaao.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\Diego\AppData\Local\Temp\xcAsaao.o
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\TMR0_CONT.X.production.o
+__end_of___wmul 15F4 0 CODE 0 text15 dist/default/production\TMR0_CONT.X.production.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\TMR0_CONT.X.production.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\TMR0_CONT.X.production.o
+__Hintcodelo 2A 0 CODE 0 intcodelo dist/default/production\TMR0_CONT.X.production.o
+_Config_TMR0_Interrupt 1686 0 CODE 0 text23 dist/default/production\TMR0_CONT.X.production.o
+__end_of___lodiv F90 0 CODE 0 text11 dist/default/production\TMR0_CONT.X.production.o
+__end_of___lomod 1060 0 CODE 0 text10 dist/default/production\TMR0_CONT.X.production.o
+___lodiv@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+?_strlen 1 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+utoa@fp 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+__end_of_Config_Port 1618 0 CODE 0 text25 dist/default/production\TMR0_CONT.X.production.o
+Lcd_Set_Cursor@temp 8 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+__Lintcodelo 2A 0 CODE 0 intcodelo dist/default/production\TMR0_CONT.X.production.o
+start_initialization 1638 0 CODE 0 cinit dist/default/production\TMR0_CONT.X.production.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\TMR0_CONT.X.production.o
+_TRISCbits F94 0 ABS 0 - dist/default/production\TMR0_CONT.X.production.o
+___rparam_used 1 0 ABS 0 - dist/default/production\TMR0_CONT.X.production.o
+_Lcd_Write_String 14E8 0 CODE 0 text16 dist/default/production\TMR0_CONT.X.production.o
+_SLRCON F7A 0 ABS 0 - dist/default/production\TMR0_CONT.X.production.o
+__pcstackBANK0 9A 0 BANK0 1 cstackBANK0 dist/default/production\TMR0_CONT.X.production.o
+isa$xinst 0 0 ABS 0 - C:\Users\Diego\AppData\Local\Temp\xcAsaao.o
+fputc@fp 3 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+fputs@fp C 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+vfpfcnvrt@done 4E 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\TMR0_CONT.X.production.o
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\TMR0_CONT.X.production.o
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\TMR0_CONT.X.production.o
+__Hbank3 0 0 ABS 0 bank3 dist/default/production\TMR0_CONT.X.production.o
+__Hbank4 0 0 ABS 0 bank4 dist/default/production\TMR0_CONT.X.production.o
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\TMR0_CONT.X.production.o
+__Hbank6 0 0 ABS 0 bank6 dist/default/production\TMR0_CONT.X.production.o
+__Hbank7 0 0 ABS 0 bank7 dist/default/production\TMR0_CONT.X.production.o
+__Hcinit 0 0 ABS 0 cinit dist/default/production\TMR0_CONT.X.production.o
+__Hconst 0 0 CONST 0 const dist/default/production\TMR0_CONT.X.production.o
+__end_of_strlen 15CE 0 CODE 0 text6 dist/default/production\TMR0_CONT.X.production.o
+__Hidata 0 0 CODE 0 idata dist/default/production\TMR0_CONT.X.production.o
+__Hidloc 200008 0 IDLOC 5 idloc dist/default/production\TMR0_CONT.X.production.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\TMR0_CONT.X.production.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\TMR0_CONT.X.production.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\TMR0_CONT.X.production.o
+__Hstack 0 0 STACK 2 stack dist/default/production\TMR0_CONT.X.production.o
+__Htext0 0 0 ABS 0 text0 dist/default/production\TMR0_CONT.X.production.o
+__Htext1 0 0 ABS 0 text1 dist/default/production\TMR0_CONT.X.production.o
+__Htext2 0 0 ABS 0 text2 dist/default/production\TMR0_CONT.X.production.o
+__Htext3 0 0 ABS 0 text3 dist/default/production\TMR0_CONT.X.production.o
+__Htext4 0 0 ABS 0 text4 dist/default/production\TMR0_CONT.X.production.o
+__Htext5 0 0 ABS 0 text5 dist/default/production\TMR0_CONT.X.production.o
+__Htext6 0 0 ABS 0 text6 dist/default/production\TMR0_CONT.X.production.o
+__Htext7 0 0 ABS 0 text7 dist/default/production\TMR0_CONT.X.production.o
+__Htext8 0 0 ABS 0 text8 dist/default/production\TMR0_CONT.X.production.o
+__Htext9 0 0 ABS 0 text9 dist/default/production\TMR0_CONT.X.production.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\TMR0_CONT.X.production.o
+__Hbigram 0 0 ABS 0 bigram dist/default/production\TMR0_CONT.X.production.o
+__Hbigsfr 0 0 ABS 0 bigsfr dist/default/production\TMR0_CONT.X.production.o
+__smallconst 800 0 SMALLCONST 0 smallconst C:\Users\Diego\AppData\Local\Temp\xcAsaao.o
+_Config_Clock 1678 0 CODE 0 text26 dist/default/production\TMR0_CONT.X.production.o
+__end_of_sprintf 1452 0 CODE 0 text1 dist/default/production\TMR0_CONT.X.production.o
+__Hcomram 0 0 ABS 0 comram dist/default/production\TMR0_CONT.X.production.o
+__Hconfig 30000E 0 CONFIG 4 config dist/default/production\TMR0_CONT.X.production.o
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\TMR0_CONT.X.production.o
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\TMR0_CONT.X.production.o
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\TMR0_CONT.X.production.o
+__Lbank3 0 0 ABS 0 bank3 dist/default/production\TMR0_CONT.X.production.o
+__Lbank4 0 0 ABS 0 bank4 dist/default/production\TMR0_CONT.X.production.o
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\TMR0_CONT.X.production.o
+__Lbank6 0 0 ABS 0 bank6 dist/default/production\TMR0_CONT.X.production.o
+__Lbank7 0 0 ABS 0 bank7 dist/default/production\TMR0_CONT.X.production.o
+__end_of_isdigit 1560 0 CODE 0 text14 dist/default/production\TMR0_CONT.X.production.o
+__Lcinit 0 0 ABS 0 cinit dist/default/production\TMR0_CONT.X.production.o
+__Lconst 0 0 CONST 0 const dist/default/production\TMR0_CONT.X.production.o
+__Lidata 0 0 CODE 0 idata dist/default/production\TMR0_CONT.X.production.o
+__Lidloc 0 0 IDLOC 5 idloc dist/default/production\TMR0_CONT.X.production.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\TMR0_CONT.X.production.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\TMR0_CONT.X.production.o
+__end_of_isspace 14A4 0 CODE 0 text13 dist/default/production\TMR0_CONT.X.production.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\TMR0_CONT.X.production.o
+__Lstack 0 0 STACK 2 stack dist/default/production\TMR0_CONT.X.production.o
+__Ltext0 0 0 ABS 0 text0 dist/default/production\TMR0_CONT.X.production.o
+__Ltext1 0 0 ABS 0 text1 dist/default/production\TMR0_CONT.X.production.o
+__Ltext2 0 0 ABS 0 text2 dist/default/production\TMR0_CONT.X.production.o
+__Ltext3 0 0 ABS 0 text3 dist/default/production\TMR0_CONT.X.production.o
+__Ltext4 0 0 ABS 0 text4 dist/default/production\TMR0_CONT.X.production.o
+__Ltext5 0 0 ABS 0 text5 dist/default/production\TMR0_CONT.X.production.o
+__Ltext6 0 0 ABS 0 text6 dist/default/production\TMR0_CONT.X.production.o
+__Ltext7 0 0 ABS 0 text7 dist/default/production\TMR0_CONT.X.production.o
+__Ltext8 0 0 ABS 0 text8 dist/default/production\TMR0_CONT.X.production.o
+__Ltext9 0 0 ABS 0 text9 dist/default/production\TMR0_CONT.X.production.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\TMR0_CONT.X.production.o
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\TMR0_CONT.X.production.o
+_INTCONbits FF2 0 ABS 0 - dist/default/production\TMR0_CONT.X.production.o
+__Habs1 0 0 ABS 0 abs1 dist/default/production\TMR0_CONT.X.production.o
+__Hdata 0 0 ABS 0 data dist/default/production\TMR0_CONT.X.production.o
+__Hheap 0 0 HEAP 7 heap dist/default/production\TMR0_CONT.X.production.o
+__Hinit 2E 0 CODE 0 init dist/default/production\TMR0_CONT.X.production.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\TMR0_CONT.X.production.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\TMR0_CONT.X.production.o
+__Htemp 5F 0 COMRAM 1 temp dist/default/production\TMR0_CONT.X.production.o
+__Htext 0 0 ABS 0 text dist/default/production\TMR0_CONT.X.production.o
+__Labs1 0 0 ABS 0 abs1 dist/default/production\TMR0_CONT.X.production.o
+__Ldata 0 0 ABS 0 data dist/default/production\TMR0_CONT.X.production.o
+__Lheap 0 0 HEAP 7 heap dist/default/production\TMR0_CONT.X.production.o
+__Linit 2A 0 CODE 0 init dist/default/production\TMR0_CONT.X.production.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\TMR0_CONT.X.production.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\TMR0_CONT.X.production.o
+__Ltemp 5E 0 COMRAM 1 temp dist/default/production\TMR0_CONT.X.production.o
+__Ltext 0 0 ABS 0 text dist/default/production\TMR0_CONT.X.production.o
+___wmul 15CE 0 CODE 0 text15 dist/default/production\TMR0_CONT.X.production.o
+___lomod@counter 11 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\TMR0_CONT.X.production.o
+int$flags 5E 0 COMRAM 1 temp dist/default/production\TMR0_CONT.X.production.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+isspace@c 1 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+__Hintret 0 0 ABS 0 intret dist/default/production\TMR0_CONT.X.production.o
+__Hirdata 0 0 CODE 0 irdata dist/default/production\TMR0_CONT.X.production.o
+_ISR 8 0 CODE 0 intcode dist/default/production\TMR0_CONT.X.production.o
+__S0 1692 0 ABS 0 - dist/default/production\TMR0_CONT.X.production.o
+__S1 A9 0 ABS 0 - dist/default/production\TMR0_CONT.X.production.o
+__S4 0 0 ABS 0 - dist/default/production\TMR0_CONT.X.production.o
+__S5 0 0 ABS 0 - dist/default/production\TMR0_CONT.X.production.o
+_pad 112A 0 CODE 0 text5 dist/default/production\TMR0_CONT.X.production.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\TMR0_CONT.X.production.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\TMR0_CONT.X.production.o
+sprintf@fmt 5A 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+__end_of_Lcd_Write_String 1528 0 CODE 0 text16 dist/default/production\TMR0_CONT.X.production.o
+__end_of_Config_TMR0_Counter_16bits_prescaler 166A 0 CODE 0 text24 dist/default/production\TMR0_CONT.X.production.o
+__end_of_ISR 2A 0 CODE 0 intcode dist/default/production\TMR0_CONT.X.production.o
+__end_of_pad 11F0 0 CODE 0 text5 dist/default/production\TMR0_CONT.X.production.o
+__end_of_Lcd_Clear 1678 0 CODE 0 text20 dist/default/production\TMR0_CONT.X.production.o
+__Lintentry 0 0 ABS 0 intentry dist/default/production\TMR0_CONT.X.production.o
+Lcd_Write_String@a 5 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+Lcd_Write_String@i 7 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+__Hramtop 800 0 RAM 0 ramtop dist/default/production\TMR0_CONT.X.production.o
+strlen@a 3 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+strlen@s 1 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\TMR0_CONT.X.production.o
+__activetblptr 2 0 ABS 0 - dist/default/production\TMR0_CONT.X.production.o
+__end_of_Lcd_Cmd 1638 0 CODE 0 text21 dist/default/production\TMR0_CONT.X.production.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\TMR0_CONT.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\TMR0_CONT.X.production.o
+__Htext10 0 0 ABS 0 text10 dist/default/production\TMR0_CONT.X.production.o
+__Htext11 0 0 ABS 0 text11 dist/default/production\TMR0_CONT.X.production.o
+__Htext12 0 0 ABS 0 text12 dist/default/production\TMR0_CONT.X.production.o
+__Htext13 0 0 ABS 0 text13 dist/default/production\TMR0_CONT.X.production.o
+__Htext14 0 0 ABS 0 text14 dist/default/production\TMR0_CONT.X.production.o
+__Htext15 0 0 ABS 0 text15 dist/default/production\TMR0_CONT.X.production.o
+__Htext16 0 0 ABS 0 text16 dist/default/production\TMR0_CONT.X.production.o
+__Htext17 0 0 ABS 0 text17 dist/default/production\TMR0_CONT.X.production.o
+__Htext18 0 0 ABS 0 text18 dist/default/production\TMR0_CONT.X.production.o
+__Htext19 0 0 ABS 0 text19 dist/default/production\TMR0_CONT.X.production.o
+__Htext20 0 0 ABS 0 text20 dist/default/production\TMR0_CONT.X.production.o
+__Htext21 0 0 ABS 0 text21 dist/default/production\TMR0_CONT.X.production.o
+__Htext22 0 0 ABS 0 text22 dist/default/production\TMR0_CONT.X.production.o
+__Htext23 0 0 ABS 0 text23 dist/default/production\TMR0_CONT.X.production.o
+__Htext24 0 0 ABS 0 text24 dist/default/production\TMR0_CONT.X.production.o
+__Htext25 0 0 ABS 0 text25 dist/default/production\TMR0_CONT.X.production.o
+__Htext26 0 0 ABS 0 text26 dist/default/production\TMR0_CONT.X.production.o
+__end_of_Config_Clock 1686 0 CODE 0 text26 dist/default/production\TMR0_CONT.X.production.o
+vfpfcnvrt@fmt 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+vfpfcnvrt@llu 46 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+pad@buf 13 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+__ptext10 F90 0 CODE 0 text10 dist/default/production\TMR0_CONT.X.production.o
+__ptext11 EA0 0 CODE 0 text11 dist/default/production\TMR0_CONT.X.production.o
+__ptext12 D4A 0 CODE 0 text12 dist/default/production\TMR0_CONT.X.production.o
+__ptext13 1452 0 CODE 0 text13 dist/default/production\TMR0_CONT.X.production.o
+__ptext14 1528 0 CODE 0 text14 dist/default/production\TMR0_CONT.X.production.o
+__ptext15 15CE 0 CODE 0 text15 dist/default/production\TMR0_CONT.X.production.o
+__ptext16 14E8 0 CODE 0 text16 dist/default/production\TMR0_CONT.X.production.o
+__ptext17 1560 0 CODE 0 text17 dist/default/production\TMR0_CONT.X.production.o
+__ptext18 12DC 0 CODE 0 text18 dist/default/production\TMR0_CONT.X.production.o
+__ptext19 1268 0 CODE 0 text19 dist/default/production\TMR0_CONT.X.production.o
+__ptext20 166A 0 CODE 0 text20 dist/default/production\TMR0_CONT.X.production.o
+__ptext21 1618 0 CODE 0 text21 dist/default/production\TMR0_CONT.X.production.o
+__ptext22 13A4 0 CODE 0 text22 dist/default/production\TMR0_CONT.X.production.o
+__ptext23 1686 0 CODE 0 text23 dist/default/production\TMR0_CONT.X.production.o
+__ptext24 1652 0 CODE 0 text24 dist/default/production\TMR0_CONT.X.production.o
+__ptext25 15F4 0 CODE 0 text25 dist/default/production\TMR0_CONT.X.production.o
+__ptext26 1678 0 CODE 0 text26 dist/default/production\TMR0_CONT.X.production.o
+_Lcd_Clear 166A 0 CODE 0 text20 dist/default/production\TMR0_CONT.X.production.o
+_Lcd_Set_Cursor 12DC 0 CODE 0 text18 dist/default/production\TMR0_CONT.X.production.o
+___lodiv EA0 0 CODE 0 text11 dist/default/production\TMR0_CONT.X.production.o
+___lomod F90 0 CODE 0 text10 dist/default/production\TMR0_CONT.X.production.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\TMR0_CONT.X.production.o
+__Lbigram 0 0 ABS 0 bigram dist/default/production\TMR0_CONT.X.production.o
+__Lbigsfr 0 0 ABS 0 bigsfr dist/default/production\TMR0_CONT.X.production.o
+?_atoi 8 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+?_utoa 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+__Lcomram 0 0 ABS 0 comram dist/default/production\TMR0_CONT.X.production.o
+__Lconfig 0 0 CONFIG 4 config dist/default/production\TMR0_CONT.X.production.o
+___wmul@multiplier 1 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+_LATCbits F8B 0 ABS 0 - dist/default/production\TMR0_CONT.X.production.o
+_LATDbits F8C 0 ABS 0 - dist/default/production\TMR0_CONT.X.production.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\TMR0_CONT.X.production.o
+_strlen 1598 0 CODE 0 text6 dist/default/production\TMR0_CONT.X.production.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\TMR0_CONT.X.production.o
+isa$std 1 0 ABS 0 - C:\Users\Diego\AppData\Local\Temp\xcAsaao.o
+stackhi 0 0 ABS 0 - C:\Users\Diego\AppData\Local\Temp\xcAsaao.o
+stacklo 0 0 ABS 0 - C:\Users\Diego\AppData\Local\Temp\xcAsaao.o
+__Lintcode 8 0 CODE 0 intcode dist/default/production\TMR0_CONT.X.production.o
+__Lintret 0 0 ABS 0 intret dist/default/production\TMR0_CONT.X.production.o
+__Lirdata 0 0 CODE 0 irdata dist/default/production\TMR0_CONT.X.production.o
+?_vfpfcnvrt 3C 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+__Lspace_0 0 0 ABS 0 - dist/default/production\TMR0_CONT.X.production.o
+__Lspace_1 0 0 ABS 0 - dist/default/production\TMR0_CONT.X.production.o
+__Lspace_2 0 0 ABS 0 - dist/default/production\TMR0_CONT.X.production.o
+__Lspace_4 0 0 ABS 0 - dist/default/production\TMR0_CONT.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\TMR0_CONT.X.production.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+___lomod@divisor 9 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+end_of_initialization 1644 0 CODE 0 cinit dist/default/production\TMR0_CONT.X.production.o
+__end_of_Lcd_Set_Cursor 1342 0 CODE 0 text18 dist/default/production\TMR0_CONT.X.production.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\TMR0_CONT.X.production.o
+__Hintentry 0 0 ABS 0 intentry dist/default/production\TMR0_CONT.X.production.o
+Lcd_Set_Cursor@a 5 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+Lcd_Set_Cursor@b 4 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+Lcd_Set_Cursor@y 7 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+Lcd_Set_Cursor@z 6 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+fputc@c 1 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+fputs@c E 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+fputs@i F 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+fputs@s A 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+?___lodiv 1 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+?___lomod 1 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+vfprintf@fmt 52 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\TMR0_CONT.X.production.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\TMR0_CONT.X.production.o
+__Lramtop 800 0 RAM 0 ramtop dist/default/production\TMR0_CONT.X.production.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\TMR0_CONT.X.production.o
+__pcinit 1638 0 CODE 0 cinit dist/default/production\TMR0_CONT.X.production.o
+vfpfcnvrt@ap 40 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+vfpfcnvrt@fp 3C 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+__ptext0 11F0 0 CODE 0 text0 dist/default/production\TMR0_CONT.X.production.o
+__ptext1 1400 0 CODE 0 text1 dist/default/production\TMR0_CONT.X.production.o
+__ptext2 1342 0 CODE 0 text2 dist/default/production\TMR0_CONT.X.production.o
+__ptext3 80E 0 CODE 0 text3 dist/default/production\TMR0_CONT.X.production.o
+__ptext4 B48 0 CODE 0 text4 dist/default/production\TMR0_CONT.X.production.o
+__ptext5 112A 0 CODE 0 text5 dist/default/production\TMR0_CONT.X.production.o
+__ptext6 1598 0 CODE 0 text6 dist/default/production\TMR0_CONT.X.production.o
+__ptext7 14A4 0 CODE 0 text7 dist/default/production\TMR0_CONT.X.production.o
+__ptext8 1060 0 CODE 0 text8 dist/default/production\TMR0_CONT.X.production.o
+__ptext9 1690 0 CODE 0 text9 dist/default/production\TMR0_CONT.X.production.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\TMR0_CONT.X.production.o
+vfprintf@ap 54 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+vfprintf@fp 50 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+vfprintf@cfmt 56 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+__Ltext10 0 0 ABS 0 text10 dist/default/production\TMR0_CONT.X.production.o
+__Ltext11 0 0 ABS 0 text11 dist/default/production\TMR0_CONT.X.production.o
+__Ltext12 0 0 ABS 0 text12 dist/default/production\TMR0_CONT.X.production.o
+__Ltext13 0 0 ABS 0 text13 dist/default/production\TMR0_CONT.X.production.o
+__Ltext14 0 0 ABS 0 text14 dist/default/production\TMR0_CONT.X.production.o
+__Ltext15 0 0 ABS 0 text15 dist/default/production\TMR0_CONT.X.production.o
+__Ltext16 0 0 ABS 0 text16 dist/default/production\TMR0_CONT.X.production.o
+__Ltext17 0 0 ABS 0 text17 dist/default/production\TMR0_CONT.X.production.o
+__Ltext18 0 0 ABS 0 text18 dist/default/production\TMR0_CONT.X.production.o
+__Ltext19 0 0 ABS 0 text19 dist/default/production\TMR0_CONT.X.production.o
+__Ltext20 0 0 ABS 0 text20 dist/default/production\TMR0_CONT.X.production.o
+__Ltext21 0 0 ABS 0 text21 dist/default/production\TMR0_CONT.X.production.o
+__Ltext22 0 0 ABS 0 text22 dist/default/production\TMR0_CONT.X.production.o
+__Ltext23 0 0 ABS 0 text23 dist/default/production\TMR0_CONT.X.production.o
+__Ltext24 0 0 ABS 0 text24 dist/default/production\TMR0_CONT.X.production.o
+__Ltext25 0 0 ABS 0 text25 dist/default/production\TMR0_CONT.X.production.o
+__Ltext26 0 0 ABS 0 text26 dist/default/production\TMR0_CONT.X.production.o
+__ramtop 800 0 RAM 0 ramtop C:\Users\Diego\AppData\Local\Temp\xcAsaao.o
+_sprintf 1400 0 CODE 0 text1 dist/default/production\TMR0_CONT.X.production.o
+_vfprintf 1342 0 CODE 0 text2 dist/default/production\TMR0_CONT.X.production.o
+__Lpowerup 2A 0 CODE 0 powerup dist/default/production\TMR0_CONT.X.production.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\TMR0_CONT.X.production.o
+sprintf@ap 9A 0 BANK0 1 cstackBANK0 dist/default/production\TMR0_CONT.X.production.o
+_isdigit 1528 0 CODE 0 text14 dist/default/production\TMR0_CONT.X.production.o
+_isspace 1452 0 CODE 0 text13 dist/default/production\TMR0_CONT.X.production.o
+___lodiv@quotient 11 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+__psmallconst 800 0 SMALLCONST 0 smallconst dist/default/production\TMR0_CONT.X.production.o
+_isspace$968 7 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\TMR0_CONT.X.production.o
+__end_of_vfprintf 13A4 0 CODE 0 text2 dist/default/production\TMR0_CONT.X.production.o
+___lomod@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+___heap_hi 0 0 ABS 0 - C:\Users\Diego\AppData\Local\Temp\xcAsaao.o
+___heap_lo 0 0 ABS 0 - C:\Users\Diego\AppData\Local\Temp\xcAsaao.o
+___param_bank 0 0 ABS 0 - dist/default/production\TMR0_CONT.X.production.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\TMR0_CONT.X.production.o
+__end_of__initialization 1644 0 CODE 0 cinit dist/default/production\TMR0_CONT.X.production.o
+Lcd_Cmd@a 3 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\TMR0_CONT.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\TMR0_CONT.X.production.o
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+___lodiv@counter 19 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+_Config_Port 15F4 0 CODE 0 text25 dist/default/production\TMR0_CONT.X.production.o
+sprintf@f 9C 0 BANK0 1 cstackBANK0 dist/default/production\TMR0_CONT.X.production.o
+sprintf@s 58 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+__end_of_atoi EA0 0 CODE 0 text12 dist/default/production\TMR0_CONT.X.production.o
+__end_of_main 1268 0 CODE 0 text0 dist/default/production\TMR0_CONT.X.production.o
+__end_of_utoa D4A 0 CODE 0 text4 dist/default/production\TMR0_CONT.X.production.o
+__pintcode 8 0 CODE 0 intcode dist/default/production\TMR0_CONT.X.production.o
+isdigit@c 1 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+__end_of_fputc 112A 0 CODE 0 text8 dist/default/production\TMR0_CONT.X.production.o
+__end_of_fputs 14E8 0 CODE 0 text7 dist/default/production\TMR0_CONT.X.production.o
+?_sprintf 58 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+_TRISB F93 0 ABS 0 - dist/default/production\TMR0_CONT.X.production.o
+_TRISD F95 0 ABS 0 - dist/default/production\TMR0_CONT.X.production.o
+__end_of_putch 1692 0 CODE 0 text9 dist/default/production\TMR0_CONT.X.production.o
+__HRAM 0 0 ABS 0 - dist/default/production\TMR0_CONT.X.production.o
+__Hbss 0 0 RAM 1 bss dist/default/production\TMR0_CONT.X.production.o
+__Hram 0 0 ABS 0 ram dist/default/production\TMR0_CONT.X.production.o
+__Hsfr 0 0 ABS 0 sfr dist/default/production\TMR0_CONT.X.production.o
+__LRAM 1 0 ABS 0 - dist/default/production\TMR0_CONT.X.production.o
+__Lbss 0 0 RAM 1 bss dist/default/production\TMR0_CONT.X.production.o
+__Lram 0 0 ABS 0 ram dist/default/production\TMR0_CONT.X.production.o
+__Lsfr 0 0 ABS 0 sfr dist/default/production\TMR0_CONT.X.production.o
+atoi@neg E 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+_flags 66 0 BANK0 1 bssBANK0 dist/default/production\TMR0_CONT.X.production.o
+_fputc 1060 0 CODE 0 text8 dist/default/production\TMR0_CONT.X.production.o
+_fputs 14A4 0 CODE 0 text7 dist/default/production\TMR0_CONT.X.production.o
+_putch 1690 0 CODE 0 text9 dist/default/production\TMR0_CONT.X.production.o
+_width 62 0 BANK0 1 bssBANK0 dist/default/production\TMR0_CONT.X.production.o
+_Config_TMR0_Counter_16bits_prescaler 1652 0 CODE 0 text24 dist/default/production\TMR0_CONT.X.production.o
+?_isdigit 1 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+?_isspace 1 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+_Lcd_Cmd 1618 0 CODE 0 text21 dist/default/production\TMR0_CONT.X.production.o
+atoi@n 10 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+atoi@s 8 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+_contador 68 0 BANK0 1 bssBANK0 dist/default/production\TMR0_CONT.X.production.o
+__initialization 1638 0 CODE 0 cinit dist/default/production\TMR0_CONT.X.production.o
+__pbssBANK0 60 0 BANK0 1 bssBANK0 dist/default/production\TMR0_CONT.X.production.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\TMR0_CONT.X.production.o
+___wmul@product 5 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+__Hsmallconst 80E 0 SMALLCONST 0 smallconst dist/default/production\TMR0_CONT.X.production.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\TMR0_CONT.X.production.o
+Lcd_Write_Char@a 4 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+Lcd_Write_Char@y 3 0 COMRAM 1 cstackCOMRAM dist/default/production\TMR0_CONT.X.production.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\TMR0_CONT.X.production.o
+__Hintcode 2A 0 CODE 0 intcode dist/default/production\TMR0_CONT.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text3 0 80E 80E E84 1
+cstackCOMRAM 1 1 1 5E 1
+reset_vec 0 0 0 4 1
+bssBANK0 1 60 60 49 1
+intcode 0 8 8 26 1
+smallconst 0 800 800 E 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

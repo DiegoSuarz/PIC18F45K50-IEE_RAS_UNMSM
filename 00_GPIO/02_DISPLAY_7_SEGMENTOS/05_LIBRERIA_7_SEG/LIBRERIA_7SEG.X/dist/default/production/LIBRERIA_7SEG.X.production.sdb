@@ -1,0 +1,141 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F45K50 ]
+[d frameptr 4065 ]
+"4 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"4 D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\00_GPIO\02_DISPLAY_7_SEGMENTOS\05_LIBRERIA_7_SEG\LIBRERIA_7SEG.X\display_7seg.c
+[v _Display_anodo Display_anodo `(uc  1 e 1 0 ]
+"10
+[v _Display_catodo Display_catodo `(uc  1 e 1 0 ]
+"26 D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\00_GPIO\02_DISPLAY_7_SEGMENTOS\05_LIBRERIA_7_SEG\LIBRERIA_7SEG.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"36
+[v _Config_Clock Config_Clock `(v  1 e 1 0 ]
+"41
+[v _Config_Port Config_Port `(v  1 e 1 0 ]
+"87
+[v _ejemplo2 ejemplo2 `(v  1 e 1 0 ]
+"37 D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\00_GPIO\02_DISPLAY_7_SEGMENTOS\05_LIBRERIA_7_SEG\LIBRERIA_7SEG.X/display_7seg.h
+[v _SevenSegmentASCII SevenSegmentASCII `C[128]uc  1 e 128 0 ]
+[s S73 . 1 `uc 1 ANSA0 1 0 :1:0 
+`uc 1 ANSA1 1 0 :1:1 
+`uc 1 ANSA2 1 0 :1:2 
+`uc 1 ANSA3 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 ANSA5 1 0 :1:5 
+]
+"248 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h
+[u S80 . 1 `S73 1 . 1 0 ]
+[v _ANSELAbits ANSELAbits `VES80  1 e 1 @3931 ]
+"278
+[v _ANSELB ANSELB `VEuc  1 e 1 @3932 ]
+"362
+[v _ANSELD ANSELD `VEuc  1 e 1 @3934 ]
+"2521
+[v _SLRCON SLRCON `VEuc  1 e 1 @3962 ]
+"3892
+[v _LATB LATB `VEuc  1 e 1 @3978 ]
+"4106
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+[s S92 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+`uc 1 TRISA7 1 0 :1:7 
+]
+"4659
+[s S101 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+[u S110 . 1 `S92 1 . 1 0 `S101 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES110  1 e 1 @3986 ]
+"4849
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"5249
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+[s S36 . 1 `uc 1 SCS 1 0 :2:0 
+`uc 1 HFIOFS 1 0 :1:2 
+`uc 1 OSTS 1 0 :1:3 
+`uc 1 IRCF 1 0 :3:4 
+`uc 1 IDLEN 1 0 :1:7 
+]
+"12380
+[s S42 . 1 `uc 1 SCS0 1 0 :1:0 
+`uc 1 SCS1 1 0 :1:1 
+`uc 1 FLTS 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 IRCF0 1 0 :1:4 
+`uc 1 IRCF1 1 0 :1:5 
+`uc 1 IRCF2 1 0 :1:6 
+]
+[u S50 . 1 `S36 1 . 1 0 `S42 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES50  1 e 1 @4051 ]
+"18 D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\00_GPIO\02_DISPLAY_7_SEGMENTOS\05_LIBRERIA_7_SEG\LIBRERIA_7SEG.X\main.c
+[v _mensaje mensaje `[4]uc  1 e 4 0 ]
+"26
+[v _main main `(v  1 e 1 0 ]
+{
+"35
+} 0
+"87
+[v _ejemplo2 ejemplo2 `(v  1 e 1 0 ]
+{
+"88
+[v ejemplo2@i i `uc  1 a 1 4 ]
+"93
+} 0
+"10 D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\00_GPIO\02_DISPLAY_7_SEGMENTOS\05_LIBRERIA_7_SEG\LIBRERIA_7SEG.X\display_7seg.c
+[v _Display_catodo Display_catodo `(uc  1 e 1 0 ]
+{
+[v Display_catodo@literal literal `uc  1 a 1 wreg ]
+"11
+[v Display_catodo@dato dato `uc  1 a 1 1 ]
+"10
+[v Display_catodo@literal literal `uc  1 a 1 wreg ]
+"12
+[v Display_catodo@literal literal `uc  1 a 1 0 ]
+"14
+} 0
+"41 D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\00_GPIO\02_DISPLAY_7_SEGMENTOS\05_LIBRERIA_7_SEG\LIBRERIA_7SEG.X\main.c
+[v _Config_Port Config_Port `(v  1 e 1 0 ]
+{
+"63
+} 0
+"36
+[v _Config_Clock Config_Clock `(v  1 e 1 0 ]
+{
+"39
+} 0

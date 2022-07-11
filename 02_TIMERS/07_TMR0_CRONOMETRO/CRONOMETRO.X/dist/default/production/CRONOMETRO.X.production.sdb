@@ -1,0 +1,237 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F45K50 ]
+[d frameptr 4065 ]
+"4 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"35 D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\07_TMR0_CRONOMETRO\CRONOMETRO.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"52
+[v _ISR_TMR0 ISR_TMR0 `IIH(v  1 e 1 0 ]
+"62
+[v _Config_Clock Config_Clock `(v  1 e 1 0 ]
+"67
+[v _Config_Port Config_Port `(v  1 e 1 0 ]
+"93
+[v _Imprimir_display Imprimir_display `(v  1 e 1 0 ]
+"127
+[v _Config_TMRS_Interrupt Config_TMRS_Interrupt `(v  1 e 1 0 ]
+"137
+[v _Config_TMR0_Temp Config_TMR0_Temp `(v  1 e 1 0 ]
+[s S131 . 1 `uc 1 ANSA0 1 0 :1:0 
+`uc 1 ANSA1 1 0 :1:1 
+`uc 1 ANSA2 1 0 :1:2 
+`uc 1 ANSA3 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 ANSA5 1 0 :1:5 
+]
+"248 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h
+[u S138 . 1 `S131 1 . 1 0 ]
+[v _ANSELAbits ANSELAbits `VES138  1 e 1 @3931 ]
+"362
+[v _ANSELD ANSELD `VEuc  1 e 1 @3934 ]
+"2521
+[v _SLRCON SLRCON `VEuc  1 e 1 @3962 ]
+"3780
+[v _LATA LATA `VEuc  1 e 1 @3977 ]
+[s S189 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"3807
+[s S198 . 1 `uc 1 LA0 1 0 :1:0 
+`uc 1 LA1 1 0 :1:1 
+`uc 1 LA2 1 0 :1:2 
+`uc 1 LA3 1 0 :1:3 
+`uc 1 LA4 1 0 :1:4 
+`uc 1 LA5 1 0 :1:5 
+`uc 1 LA6 1 0 :1:6 
+`uc 1 LA7 1 0 :1:7 
+]
+[u S207 . 1 `S189 1 . 1 0 `S198 1 . 1 0 ]
+[v _LATAbits LATAbits `VES207  1 e 1 @3977 ]
+"4106
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+[s S149 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+`uc 1 TRISA7 1 0 :1:7 
+]
+"4659
+[s S158 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+[u S167 . 1 `S149 1 . 1 0 `S158 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES167  1 e 1 @3986 ]
+"5249
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+[s S95 . 1 `uc 1 SCS 1 0 :2:0 
+`uc 1 HFIOFS 1 0 :1:2 
+`uc 1 OSTS 1 0 :1:3 
+`uc 1 IRCF 1 0 :3:4 
+`uc 1 IDLEN 1 0 :1:7 
+]
+"12380
+[s S101 . 1 `uc 1 SCS0 1 0 :1:0 
+`uc 1 SCS1 1 0 :1:1 
+`uc 1 FLTS 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 IRCF0 1 0 :1:4 
+`uc 1 IRCF1 1 0 :1:5 
+`uc 1 IRCF2 1 0 :1:6 
+]
+[u S109 . 1 `S95 1 . 1 0 `S101 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES109  1 e 1 @4051 ]
+[s S235 . 1 `uc 1 T0PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 T08BIT 1 0 :1:6 
+`uc 1 TMR0ON 1 0 :1:7 
+]
+"12460
+[s S242 . 1 `uc 1 T0PS0 1 0 :1:0 
+`uc 1 T0PS1 1 0 :1:1 
+`uc 1 T0PS2 1 0 :1:2 
+]
+[u S246 . 1 `S235 1 . 1 0 `S242 1 . 1 0 ]
+[v _T0CONbits T0CONbits `VES246  1 e 1 @4053 ]
+"12510
+[v _TMR0 TMR0 `VEus  1 e 2 @4054 ]
+[s S45 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"13258
+[s S54 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S63 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S67 . 1 `S45 1 . 1 0 `S54 1 . 1 0 `S63 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES67  1 e 1 @4082 ]
+"15 D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\07_TMR0_CRONOMETRO\CRONOMETRO.X\main.c
+[v _display_anodo display_anodo `[10]uc  1 e 10 0 ]
+"20
+[v _unidades unidades `uc  1 e 1 0 ]
+"21
+[v _decenas decenas `uc  1 e 1 0 ]
+"22
+[v _centenas centenas `uc  1 e 1 0 ]
+"23
+[v _miles miles `uc  1 e 1 0 ]
+"25
+[v _cuenta cuenta `us  1 e 2 0 ]
+"35
+[v _main main `(v  1 e 1 0 ]
+{
+"50
+} 0
+"93
+[v _Imprimir_display Imprimir_display `(v  1 e 1 0 ]
+{
+[v Imprimir_display@dato dato `us  1 p 2 12 ]
+"124
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 11 ]
+"7
+[v ___lwmod@dividend dividend `ui  1 p 2 7 ]
+[v ___lwmod@divisor divisor `ui  1 p 2 9 ]
+"25
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 4 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 6 ]
+"7
+[v ___lwdiv@dividend dividend `ui  1 p 2 0 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 2 ]
+"30
+} 0
+"127 D:\CURSOS\GitHub\PIC\PIC IEEE SECTION PERU UNMSM\Codigo\02_TIMERS\07_TMR0_CRONOMETRO\CRONOMETRO.X\main.c
+[v _Config_TMRS_Interrupt Config_TMRS_Interrupt `(v  1 e 1 0 ]
+{
+"135
+} 0
+"137
+[v _Config_TMR0_Temp Config_TMR0_Temp `(v  1 e 1 0 ]
+{
+"154
+} 0
+"67
+[v _Config_Port Config_Port `(v  1 e 1 0 ]
+{
+"91
+} 0
+"62
+[v _Config_Clock Config_Clock `(v  1 e 1 0 ]
+{
+"65
+} 0
+"52
+[v _ISR_TMR0 ISR_TMR0 `IIH(v  1 e 1 0 ]
+{
+"60
+} 0
