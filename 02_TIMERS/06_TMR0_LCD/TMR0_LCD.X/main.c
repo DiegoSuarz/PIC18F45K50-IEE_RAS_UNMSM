@@ -15,6 +15,7 @@
 uint8_t contador=0;
 uint8_t flag=0;
 char str_contador[14];
+
 void Config_Clock(void);
 void Config_Port(void);
 void Config_TMRS_Interrupt(void);
