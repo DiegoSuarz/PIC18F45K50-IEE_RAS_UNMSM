@@ -54,7 +54,7 @@ void Config_CCP_Interrupt(void){
 }
 
 void Config_CCP_Compara(void){
-    //Configuración de pines ccp
+    //Configuración de pines ccp1
     ANSELBbits.ANSB2 = 0; //pin PB2 digital
     TRISCbits.TRISC2 = 0; //pin RC2 como salida 
 
