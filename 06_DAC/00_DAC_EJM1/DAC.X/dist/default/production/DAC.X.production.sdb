@@ -1,0 +1,126 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F45K50 ]
+[d frameptr 4065 ]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"33 D:\OneDrive - Universidad Tecnologica del Peru\Cursos\PIC\IEEE RAS UNMSM\codigo\PIC18F45K50-IEE_RAS_UNMSM\07_DAC\00_DAC_EJM1\DAC.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"49
+[v _Config_Clock Config_Clock `(v  1 e 1 0 ]
+"54
+[v _Config_Port Config_Port `(v  1 e 1 0 ]
+"68
+[v _DAC_Init DAC_Init `(v  1 e 1 0 ]
+"82
+[v _Volt_DAC Volt_DAC `(v  1 e 1 0 ]
+"112
+[v _SignalSeno SignalSeno `(v  1 e 1 0 ]
+[s S74 . 1 `uc 1 ANSA0 1 0 :1:0 
+`uc 1 ANSA1 1 0 :1:1 
+`uc 1 ANSA2 1 0 :1:2 
+`uc 1 ANSA3 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 ANSA5 1 0 :1:5 
+]
+"248 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f45k50.h
+[u S81 . 1 `S74 1 . 1 0 ]
+[v _ANSELAbits ANSELAbits `VES81  1 e 1 @3931 ]
+"362
+[v _ANSELD ANSELD `VEuc  1 e 1 @3934 ]
+"2521
+[v _SLRCON SLRCON `VEuc  1 e 1 @3962 ]
+"2565
+[v _VREFCON2 VREFCON2 `VEuc  1 e 1 @3963 ]
+[s S91 . 1 `uc 1 DACNSS 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 DACPSS 1 0 :2:2 
+`uc 1 . 1 0 :1:4 
+`uc 1 DACOE 1 0 :1:5 
+`uc 1 DACLPS 1 0 :1:6 
+`uc 1 DACEN 1 0 :1:7 
+]
+"2638
+[s S99 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 DACPSS0 1 0 :1:2 
+`uc 1 DACPSS1 1 0 :1:3 
+]
+[u S103 . 1 `S91 1 . 1 0 `S99 1 . 1 0 ]
+[v _VREFCON1bits VREFCON1bits `VES103  1 e 1 @3964 ]
+[s S40 . 1 `uc 1 SCS 1 0 :2:0 
+`uc 1 HFIOFS 1 0 :1:2 
+`uc 1 OSTS 1 0 :1:3 
+`uc 1 IRCF 1 0 :3:4 
+`uc 1 IDLEN 1 0 :1:7 
+]
+"12380
+[s S46 . 1 `uc 1 SCS0 1 0 :1:0 
+`uc 1 SCS1 1 0 :1:1 
+`uc 1 FLTS 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 IRCF0 1 0 :1:4 
+`uc 1 IRCF1 1 0 :1:5 
+`uc 1 IRCF2 1 0 :1:6 
+]
+[u S54 . 1 `S40 1 . 1 0 `S46 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES54  1 e 1 @4051 ]
+"14 D:\OneDrive - Universidad Tecnologica del Peru\Cursos\PIC\IEEE RAS UNMSM\codigo\PIC18F45K50-IEE_RAS_UNMSM\07_DAC\00_DAC_EJM1\DAC.X\main.c
+[v _Array_DAC Array_DAC `[32]uc  1 e 32 0 ]
+"33
+[v _main main `(v  1 e 1 0 ]
+{
+"46
+} 0
+"112
+[v _SignalSeno SignalSeno `(v  1 e 1 0 ]
+{
+"113
+[v SignalSeno@i i `uc  1 a 1 2 ]
+"118
+} 0
+"82
+[v _Volt_DAC Volt_DAC `(v  1 e 1 0 ]
+{
+[v Volt_DAC@voltaje voltaje `uc  1 a 1 wreg ]
+[v Volt_DAC@voltaje voltaje `uc  1 a 1 wreg ]
+[v Volt_DAC@voltaje voltaje `uc  1 a 1 0 ]
+"84
+} 0
+"68
+[v _DAC_Init DAC_Init `(v  1 e 1 0 ]
+{
+"80
+} 0
+"54
+[v _Config_Port Config_Port `(v  1 e 1 0 ]
+{
+"66
+} 0
+"49
+[v _Config_Clock Config_Clock `(v  1 e 1 0 ]
+{
+"52
+} 0

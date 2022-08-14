@@ -8325,23 +8325,70 @@ char *tempnam(const char *, const char *);
 #pragma config EBTRB = OFF
 # 12 "main.c" 2
 
+# 1 "./USART.h" 1
+# 10 "./USART.h"
+void USART_init(uint32_t baudios);
+void USART_printChar(char caracter);
+void USART_printString(char *Ptr_string);
+# 13 "main.c" 2
+
+# 1 "./ADC_Libreria.h" 1
+# 10 "./ADC_Libreria.h"
+typedef enum{
+    _ADC_0 = 0b00000,
+    _ADC_1,
+    _ADC_2,
+    _ADC_3,
+    _ADC_4,
+    _ADC_5,
+    _ADC_6,
+    _ADC_7,
+    _ADC_8,
+    _ADC_9,
+    _ADC_10,
+    _ADC_11,
+    _ADC_12,
+    _ADC_13,
+    _ADC_14,
+    _ADC_15,
+    _ADC_16,
+    _ADC_17,
+    _ADC_18,
+    _ADC_19,
+    _ADC_Temperature_Diode = 0b11100,
+    _ADC_CTMU,
+    _ADC_DAC,
+    _ADC_FVR_BUF2
+}ChanneL_ADC;
+
+void ADC_Init(void);
+uint16_t ADC_Read(ChanneL_ADC channel);
+# 14 "main.c" 2
 
 
+
+
+float temp1, temp2, v1;
+char LCD_buffer[40];
 
 void Config_Clock(void);
 void Config_Port(void);
 
-void Serial_begin(uint32_t baudios);
-void printChar_USART(char caracter);
-void printString_USART(char *Ptr_string);
-
 void main(void) {
     Config_Clock();
     Config_Port();
+    ADC_Init();
+    USART_init(9600);
 
     while(1){
+        temp1=(ADC_Read(_ADC_12)*(5.0/1024)*100);
+        temp2=((ADC_Read(_ADC_10)*(5.0/1024)-0.5)*100);
+        v1=ADC_Read(_ADC_8)*(5.0/1024);
+        printf("\r\rSistema de adquisicion ADC:\r");
+        sprintf(LCD_buffer,"LM35: %.2f\r MPC: %.2f\r V1: %.2f",temp1,temp2,v1);
+        printf(LCD_buffer);
 
-
+        _delay((unsigned long)((1000)*(16000000UL/4000.0)));
     }
     return;
 }
@@ -8360,36 +8407,13 @@ void Config_Port(void){
     SLRCON=0b00000000;
 
 
+    ANSELBbits.ANSB0 = 1;
+    ANSELBbits.ANSB1 = 1;
+    ANSELBbits.ANSB2 = 1;
 
 
+    TRISBbits.TRISB0 =1;
+    TRISBbits.TRISB1 = 1;
+    TRISBbits.TRISB2 = 1;
 
-
-
-}
-void Serial_begin(uint32_t baudios){
-
-    uint16_t n=0;
-
-    ANSELCbits.ANSC6=0;
-    ANSELCbits.ANSC7=0;
-    TRISCbits.TRISC6=0;
-    TRISCbits.TRISC7=1;
-
-    TXSTA=0B00100100;
-    RCSTA=0B10010000;
-    BAUDCON=0B00001000;
-
-    n=(uint16_t)(((16000000UL/baudios)/4)-1);
-
-}
-
-void printChar_USART(char caracter){
-    TXREG=caracter;
-    while(TXSTAbits.TRMT==0);
-}
-void printString_USART(char *Ptr_string){
-    while(*Ptr_string!='\0'){
-        printChar_USART(*Ptr_string);
-        Ptr_string++;
-    }
 }
