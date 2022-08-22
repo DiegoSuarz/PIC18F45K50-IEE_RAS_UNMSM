@@ -1,7 +1,7 @@
 #ifndef LCD_H
 #define	LCD_H
 #include <xc.h>
-#define _XTAL_FREQ  16000000
+#define _XTAL_FREQ  16000000UL
 #define RS LATDbits.LATD2  //LATAbits.LATA5  
 #define EN LATDbits.LATD3  //LATAbits.LATA3   
 #define D4 LATDbits.LATD4

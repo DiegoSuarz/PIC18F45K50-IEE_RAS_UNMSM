@@ -69,7 +69,7 @@ void config_Interrupt_USART(void){
     INTCONbits.GIE=1;
     INTCONbits.PEIE=1;
     PIE1bits.RC1IE=1; //habilitamos la interrupcion por recepcion de datos uart
-    PIR1bits.RCIF=1; //limpiamos la bandera de interrupcion
+    PIR1bits.RCIF=0; //limpiamos la bandera de interrupcion
 }
 
 void __interrupt() ISR(){
